@@ -5,6 +5,8 @@
  * containing EXACTLY N words for dynamic workshop configurations.
  */
 
+const Tokenizer = require('../utils/tokenizer');
+
 const BASE_VOCABULARY = [
   "Open", "source", "brings", "people", "together", "to", "build", "remarkable", "community", "solutions",
   "empowering", "passionate", "creators", "worldwide", "to", "collaborate", "transparently", "and", "craft", "extraordinary",
@@ -18,9 +20,6 @@ const BASE_VOCABULARY = [
   "come", "reminding", "us", "that", "each", "small", "contribution", "ignites", "infinite", "potential"
 ];
 
-/**
- * Secondary expansion vocabulary to provide unique meaningful words up to 300 words without excessive repetition.
- */
 const EXPANSION_VOCABULARY = [
   "cultivating", "open", "dialogue", "where", "curiosity", "sparks", "creativity", "and", "collaboration", "conquers",
   "adversity", "nurturing", "trust", "through", "peer", "review", "ethical", "stewardship", "and", "sustainable",
@@ -51,7 +50,8 @@ function generateSentence(targetCount) {
   let index = 0;
 
   while (words.length < targetCount) {
-    const word = FULL_VOCABULARY[index % FULL_VOCABULARY.length];
+    const rawWord = FULL_VOCABULARY[index % FULL_VOCABULARY.length];
+    const word = Tokenizer.cleanToken(rawWord);
     words.push(word);
     index++;
   }
@@ -63,7 +63,7 @@ function generateSentence(targetCount) {
 }
 
 /**
- * Validate that a given sentence has exactly expectedCount words.
+ * Validate that a given sentence has exactly expectedCount words using canonical tokenizer.
  * @param {string} sentence 
  * @param {number} expectedCount 
  * @returns {{ valid: boolean, actualCount: number, error?: string, words: string[] }}
@@ -73,7 +73,7 @@ function validateSentence(sentence, expectedCount) {
     return { valid: false, actualCount: 0, error: 'Sentence must be a non-empty string.', words: [] };
   }
 
-  const words = sentence.trim().split(/\s+/).filter(Boolean);
+  const words = Tokenizer.tokenize(sentence);
   if (words.length !== expectedCount) {
     return {
       valid: false,

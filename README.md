@@ -26,7 +26,7 @@ Each participant is assigned a specific number (and a secret word by the organiz
 
 `[░░░░░░░░░░░░░░░░░░░░]`
 
-*Last updated: 2026-11-04T18:22:17.826Z*
+*Status: **LOCKED** | Last updated: 2026-11-04T18:57:22.220Z*
 
 ---
 

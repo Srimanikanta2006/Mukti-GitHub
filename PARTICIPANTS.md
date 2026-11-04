@@ -1,7 +1,10 @@
 # MUKTI Event: Participant Word Assignments Directory
 
-**Event ID:** `mukti-1793816537825`
+**Event ID:** `mukti-1793818642219`
 **Total Participants:** `10`
+
+> [!IMPORTANT]
+> Each participant should replace **ONLY** their assigned slot number in `README.md` with their designated word.
 
 | Slot # | Participant ID | Assigned Word | GitHub Username |
 | :--- | :--- | :--- | :--- |

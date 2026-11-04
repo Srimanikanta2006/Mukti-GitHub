@@ -9,10 +9,6 @@ const fs = require('fs');
 const path = require('path');
 
 const ROOT_DIR = path.resolve(__dirname, '..', '..');
-const CONFIG_FILE = path.join(ROOT_DIR, 'event-config.json');
-const STATE_FILE = path.join(ROOT_DIR, 'event-state.json');
-const LEGACY_ASSIGNMENTS_FILE = path.join(ROOT_DIR, 'assignments.json');
-const BACKUP_DIR = path.join(ROOT_DIR, 'backups');
 
 class EventConfigManager {
   constructor(rootDir = ROOT_DIR) {
@@ -23,19 +19,12 @@ class EventConfigManager {
     this.backupDir = path.join(rootDir, 'backups');
   }
 
-  /**
-   * Check if an active event configuration already exists.
-   */
   hasExistingConfig() {
     return fs.existsSync(this.configFile);
   }
 
-  /**
-   * Load the authoritative event configuration.
-   */
   loadConfig() {
     if (!fs.existsSync(this.configFile)) {
-      // Fallback to legacy assignments.json if event-config.json doesn't exist yet
       if (fs.existsSync(this.legacyAssignmentsFile)) {
         const legacy = JSON.parse(fs.readFileSync(this.legacyAssignmentsFile, 'utf8'));
         return {
@@ -54,49 +43,86 @@ class EventConfigManager {
   }
 
   /**
-   * Load the authoritative accepted contribution ledger.
+   * Load authoritative state with full lifecycle status mapping.
    */
   loadState() {
     if (!fs.existsSync(this.stateFile)) {
       return {
         eventId: 'initial',
-        acceptedCount: 0,
         totalSlots: 0,
-        contributions: {},
+        acceptedCount: 0,
+        pendingCount: 0,
+        rejectedCount: 0,
+        organizerCompletedCount: 0,
+        revealStatus: 'LOCKED',
+        slots: {},
+        contributions: {}, // Convenience map of accepted words { [slot]: { word, contributor, ... } }
+        activityLog: [],
         lastUpdated: new Date().toISOString()
       };
     }
 
-    return JSON.parse(fs.readFileSync(this.stateFile, 'utf8'));
+    const state = JSON.parse(fs.readFileSync(this.stateFile, 'utf8'));
+    // Ensure contributions dictionary is always synchronized for backwards compatibility
+    if (!state.contributions) state.contributions = {};
+    return state;
   }
 
-  /**
-   * Save the authoritative state file atomically.
-   */
   saveState(state) {
     state.lastUpdated = new Date().toISOString();
+    // Recompute counts
+    let accepted = 0;
+    let pending = 0;
+    let rejected = 0;
+    let organizerCompleted = 0;
+
+    for (const key of Object.keys(state.slots || {})) {
+      const s = state.slots[key];
+      if (s.status === 'accepted') accepted++;
+      else if (s.status === 'organizer-completed') organizerCompleted++;
+      else if (s.status === 'rejected') rejected++;
+      else pending++;
+    }
+
+    state.acceptedCount = accepted;
+    state.organizerCompletedCount = organizerCompleted;
+    state.rejectedCount = rejected;
+    state.pendingCount = state.totalSlots - (accepted + organizerCompleted);
+
+    // Keep legacy contributions mapping updated
+    state.contributions = {};
+    for (const key of Object.keys(state.slots || {})) {
+      const s = state.slots[key];
+      if (s.status === 'accepted' || s.status === 'organizer-completed') {
+        state.contributions[key] = {
+          slot: s.slot,
+          word: s.word || s.expectedWord,
+          contributor: s.contributor,
+          prNumber: s.prNumber,
+          commitSha: s.commitSha,
+          status: s.status,
+          timestamp: s.acceptedAt || state.lastUpdated
+        };
+      }
+    }
+
     const tempPath = `${this.stateFile}.tmp`;
     fs.writeFileSync(tempPath, JSON.stringify(state, null, 2), 'utf8');
     fs.renameSync(tempPath, this.stateFile);
   }
 
-  /**
-   * Create or update event configuration with automatic backup protection.
-   */
   saveConfig(config, options = { force: false }) {
     if (this.hasExistingConfig() && !options.force) {
       throw new Error('An event configuration already exists. Use --force to overwrite and archive previous event.');
     }
 
-    // Archive existing configuration & state before overwriting
     if (this.hasExistingConfig()) {
       this.createBackup();
     }
 
-    // Write event-config.json
     fs.writeFileSync(this.configFile, JSON.stringify(config, null, 2), 'utf8');
 
-    // Also mirror to legacy assignments.json for backwards compatibility with any older scripts
+    // Also mirror to legacy assignments.json for compatibility
     const legacyData = {
       totalSlots: config.totalParticipants,
       secretMessage: config.secretSentence,
@@ -104,20 +130,46 @@ class EventConfigManager {
     };
     fs.writeFileSync(this.legacyAssignmentsFile, JSON.stringify(legacyData, null, 2), 'utf8');
 
-    // Initialize clean event-state.json
+    // Initialize clean authoritative ledger
+    const initialSlots = {};
+    for (const s of config.slots) {
+      initialSlots[String(s.slot)] = {
+        slot: s.slot,
+        expectedWord: s.word,
+        status: 'pending', // 'pending' | 'processing' | 'accepted' | 'rejected' | 'organizer-completed'
+        prNumber: null,
+        contributor: null,
+        acceptedAt: null,
+        completedBy: null,
+        attemptCount: 0,
+        commitSha: null,
+        errorDetails: null
+      };
+    }
+
     const initialState = {
       eventId: config.eventId,
-      acceptedCount: 0,
       totalSlots: config.totalParticipants,
+      acceptedCount: 0,
+      pendingCount: config.totalParticipants,
+      rejectedCount: 0,
+      organizerCompletedCount: 0,
+      revealStatus: 'LOCKED',
+      slots: initialSlots,
       contributions: {},
+      activityLog: [
+        {
+          timestamp: new Date().toISOString(),
+          type: 'EVENT_INITIALIZED',
+          message: `Event initialized with ${config.totalParticipants} slots.`
+        }
+      ],
       lastUpdated: new Date().toISOString()
     };
+
     this.saveState(initialState);
   }
 
-  /**
-   * Archive existing event configuration to backups/ directory.
-   */
   createBackup() {
     if (!fs.existsSync(this.backupDir)) {
       fs.mkdirSync(this.backupDir, { recursive: true });
@@ -132,9 +184,6 @@ class EventConfigManager {
     }
   }
 
-  /**
-   * Create configuration object from participant count and sentence.
-   */
   buildConfig(participantCount, words, eventId = `mukti-${Date.now()}`) {
     const slots = words.map((word, index) => {
       const slot = index + 1;
@@ -142,7 +191,7 @@ class EventConfigManager {
         slot: slot,
         word: word,
         participantId: String(slot).padStart(3, '0'),
-        githubUsername: '*' // Wildcard enables open participation with word verification
+        githubUsername: '*'
       };
     });
 

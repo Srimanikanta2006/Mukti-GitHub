@@ -2,7 +2,7 @@
  * MUKTI - Contribution Processor
  * 
  * Executes the authoritative contribution transaction:
- * Validation -> State Update -> Deterministic Reconstruction -> Persistence.
+ * Validation -> Ledger State Update -> Deterministic Reconstruction -> Persistence.
  */
 
 const fs = require('fs');
@@ -43,6 +43,17 @@ class ContributionProcessor {
     });
 
     if (!validation.valid) {
+      // Record rejection in activity log
+      eventState.activityLog = eventState.activityLog || [];
+      eventState.activityLog.push({
+        timestamp: new Date().toISOString(),
+        type: 'CONTRIBUTION_REJECTED',
+        prNumber: prNumber,
+        author: author,
+        error: validation.error
+      });
+      this.configManager.saveState(eventState);
+
       return {
         success: false,
         status: 'REJECTED',
@@ -65,17 +76,47 @@ class ContributionProcessor {
       };
     }
 
-    // 3. Apply state mutation
+    // 3. Apply state mutation to authoritative ledger
     const slotKey = String(validation.slot);
-    eventState.contributions[slotKey] = {
+    if (!eventState.slots) eventState.slots = {};
+    
+    const prevAttempts = (eventState.slots[slotKey] && eventState.slots[slotKey].attemptCount) || 0;
+
+    eventState.slots[slotKey] = {
+      slot: validation.slot,
+      expectedWord: validation.expectedWord,
+      word: validation.word,
+      status: 'accepted',
+      prNumber: prNumber,
+      contributor: author,
+      acceptedAt: new Date().toISOString(),
+      completedBy: null,
+      attemptCount: prevAttempts + 1,
+      commitSha: commitSha,
+      errorDetails: null
+    };
+
+    // Log to activity log
+    eventState.activityLog = eventState.activityLog || [];
+    eventState.activityLog.push({
+      timestamp: new Date().toISOString(),
+      type: 'CONTRIBUTION_ACCEPTED',
       slot: validation.slot,
       word: validation.word,
       contributor: author,
-      prNumber: prNumber,
-      commitSha: commitSha,
-      timestamp: new Date().toISOString()
-    };
-    eventState.acceptedCount = Object.keys(eventState.contributions).length;
+      prNumber: prNumber
+    });
+
+    // Check if fully completed
+    const filledCount = Object.values(eventState.slots).filter(s => s.status === 'accepted' || s.status === 'organizer-completed').length;
+    if (filledCount === eventConfig.totalParticipants) {
+      eventState.revealStatus = 'REVEALED';
+      eventState.activityLog.push({
+        timestamp: new Date().toISOString(),
+        type: 'EVENT_COMPLETED',
+        message: `All ${eventConfig.totalParticipants} slots have been completed! Secret sentence unlocked.`
+      });
+    }
 
     // 4. Deterministically reconstruct README
     const reconstructedReadme = ReadmeBuilder.buildReadme(eventConfig, eventState);
@@ -88,7 +129,7 @@ class ContributionProcessor {
 
     // 6. Generate progress metrics & PR feedback
     const total = eventConfig.totalParticipants;
-    const filled = eventState.acceptedCount;
+    const filled = filledCount;
     const percent = Math.round((filled / total) * 100);
     const barLength = 20;
     const filledChars = Math.round((percent / 100) * barLength);

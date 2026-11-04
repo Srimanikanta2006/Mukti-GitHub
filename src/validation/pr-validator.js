@@ -2,10 +2,11 @@
  * MUKTI - Contribution Validation Engine
  * 
  * Validates Pull Requests against authoritative event configuration
- * and accepted contribution state.
+ * and accepted contribution state using canonical Tokenizer.
  */
 
 const ReadmeBuilder = require('../reconstruction/readme-builder');
+const Tokenizer = require('../utils/tokenizer');
 
 class PrValidator {
   /**
@@ -108,17 +109,17 @@ class PrValidator {
       };
     }
 
-    // 7. Sanitize word (alphanumeric and standard punctuation only)
-    const submittedWord = diff.newValue.trim().replace(/^['"`]+|['"`]+$/g, '');
-    if (!/^[a-zA-Z0-9\-_.,!?'’]+$/.test(submittedWord)) {
+    // 7. Sanitize and validate word format using canonical Tokenizer
+    const submittedWord = Tokenizer.cleanToken(diff.newValue);
+    if (!Tokenizer.isValidWordFormat(submittedWord)) {
       return {
         valid: false,
         error: `Invalid word format "${diff.newValue}". Words must contain standard letters and punctuation only (no HTML, markdown, or scripts).`
       };
     }
 
-    // 8. Word match validation (case-insensitive)
-    if (submittedWord.toLowerCase() !== assignment.word.toLowerCase()) {
+    // 8. Word match validation using canonical Tokenizer
+    if (!Tokenizer.wordsMatch(submittedWord, assignment.word)) {
       return {
         valid: false,
         error: `Word mismatch for slot #${slotNumber}: Expected word "${assignment.word}", but received "${submittedWord}".`
@@ -126,11 +127,17 @@ class PrValidator {
     }
 
     // 9. Check if slot has already been accepted in authoritative event-state.json
-    const existingContribution = eventState.contributions && eventState.contributions[String(slotNumber)];
-    if (existingContribution) {
+    const slotKey = String(slotNumber);
+    const existingSlot = (eventState.slots && eventState.slots[slotKey]) || null;
+    const existingContribution = (eventState.contributions && eventState.contributions[slotKey]) || null;
+
+    const isAlreadyFilled = (existingSlot && (existingSlot.status === 'accepted' || existingSlot.status === 'organizer-completed')) ||
+                           (existingContribution && existingContribution.word);
+
+    if (isAlreadyFilled) {
+      const existingAuthor = (existingSlot && existingSlot.contributor) || (existingContribution && existingContribution.contributor);
       // Check if this is an idempotent re-run of the same PR/author
-      if (author && existingContribution.contributor && 
-          author.toLowerCase() === existingContribution.contributor.toLowerCase()) {
+      if (author && existingAuthor && author.toLowerCase() === existingAuthor.toLowerCase()) {
         return {
           valid: true,
           isAlreadyAccepted: true,
@@ -140,9 +147,10 @@ class PrValidator {
         };
       }
 
+      const existingWord = (existingSlot && (existingSlot.word || existingSlot.expectedWord)) || existingContribution.word;
       return {
         valid: false,
-        error: `Duplicate contribution: Slot #${slotNumber} has already been accepted from @${existingContribution.contributor} ("${existingContribution.word}").`
+        error: `Duplicate contribution: Slot #${slotNumber} has already been accepted from @${existingAuthor || 'another participant'} ("${existingWord}").`
       };
     }
 
@@ -160,7 +168,7 @@ class PrValidator {
       valid: true,
       isAlreadyAccepted: false,
       slot: slotNumber,
-      word: assignment.word, // Use canonical casing from config
+      word: assignment.word, // Canonical casing
       expectedWord: assignment.word
     };
   }

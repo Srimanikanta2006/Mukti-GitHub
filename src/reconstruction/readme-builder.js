@@ -5,6 +5,8 @@
  * and accepted contribution state ledger.
  */
 
+const Tokenizer = require('../utils/tokenizer');
+
 const SENTENCE_START_TAG = '<!-- MUKTI-SENTENCE-START -->';
 const SENTENCE_END_TAG = '<!-- MUKTI-SENTENCE-END -->';
 
@@ -20,9 +22,16 @@ class ReadmeBuilder {
     const tokens = [];
 
     for (let slot = 1; slot <= totalSlots; slot++) {
-      const contribution = eventState.contributions && eventState.contributions[String(slot)];
-      if (contribution && contribution.word) {
-        tokens.push(contribution.word);
+      const slotKey = String(slot);
+      const slotObj = (eventState.slots && eventState.slots[slotKey]) || null;
+      const legacyContrib = (eventState.contributions && eventState.contributions[slotKey]) || null;
+
+      const isFilled = (slotObj && (slotObj.status === 'accepted' || slotObj.status === 'organizer-completed')) ||
+                       (legacyContrib && legacyContrib.word);
+
+      if (isFilled) {
+        const word = (slotObj && (slotObj.word || slotObj.expectedWord)) || legacyContrib.word;
+        tokens.push(Tokenizer.cleanToken(word));
       } else {
         tokens.push(String(slot));
       }
@@ -37,12 +46,25 @@ class ReadmeBuilder {
   static buildReadme(eventConfig, eventState) {
     const sentence = this.buildSentence(eventConfig, eventState);
     const total = eventConfig.totalParticipants;
-    const acceptedCount = Object.keys(eventState.contributions || {}).length;
+    const acceptedCount = (eventState.acceptedCount || 0) + (eventState.organizerCompletedCount || 0);
     const percent = Math.round((acceptedCount / total) * 100);
 
     const barLength = 20;
     const filledChars = Math.round((percent / 100) * barLength);
     const progressBar = '█'.repeat(filledChars) + '░'.repeat(barLength - filledChars);
+
+    const isRevealed = eventState.revealStatus === 'REVEALED' || (acceptedCount === total && percent === 100);
+
+    let revealSection = '';
+    if (isRevealed) {
+      revealSection = `
+> [!NOTE]
+> ### 🏆 THE SECRET SENTENCE HAS BEEN REVEALED!
+> **"${eventConfig.secretSentence}"**
+> 
+> *Congratulations to all ${total} contributors who built this together!* 🎉
+`;
+    }
 
     return `# Mukti Git & Open Source Contribution Workshop 🚀
 
@@ -57,7 +79,7 @@ This repository is a live, collaborative canvas for learning Git and open-source
 Below is our community message where each word is represented by a numbered slot.
 
 Each participant is assigned a specific number (and a secret word by the organizers). When you submit a Pull Request replacing your assigned number with your word, the sentence will be automatically verified and revealed in real time!
-
+${revealSection}
 ---
 
 ## 📜 The Secret Sentence
@@ -72,7 +94,7 @@ ${SENTENCE_END_TAG}
 
 \`[${progressBar}]\`
 
-*Last updated: ${eventState.lastUpdated || new Date().toISOString()}*
+*Status: **${eventState.revealStatus || 'LOCKED'}** | Last updated: ${eventState.lastUpdated || new Date().toISOString()}*
 
 ---
 
@@ -142,6 +164,8 @@ ${SENTENCE_END_TAG}
     let md = `# MUKTI Event: Participant Word Assignments Directory\n\n`;
     md += `**Event ID:** \`${eventConfig.eventId}\`\n`;
     md += `**Total Participants:** \`${eventConfig.totalParticipants}\`\n\n`;
+    md += `> [!IMPORTANT]\n`;
+    md += `> Each participant should replace **ONLY** their assigned slot number in \`README.md\` with their designated word.\n\n`;
     md += `| Slot # | Participant ID | Assigned Word | GitHub Username |\n`;
     md += `| :--- | :--- | :--- | :--- |\n`;
 

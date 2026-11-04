@@ -5,9 +5,16 @@
   "main": "src/index.js",
   "scripts": {
     "setup": "node src/cli/setup.js",
+    "preview": "node src/cli/preview.js",
+    "missing": "node src/cli/missing.js",
+    "complete-slot": "node src/cli/complete-slot.js",
+    "auto-fill": "node src/cli/auto-fill.js",
+    "reveal": "node src/cli/reveal.js",
+    "dashboard": "node src/cli/dashboard.js",
+    "verify": "node src/cli/verify.js",
     "test": "node scripts/run-all-tests.js",
     "demo": "node tests/full-simulation.test.js",
-    "verify": "node src/cli/verify.js"
+    "benchmark": "node tests/performance.test.js"
   },
   "keywords": [
     "mukti",

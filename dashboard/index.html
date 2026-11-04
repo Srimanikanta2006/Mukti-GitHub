@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MUKTI — Live Contribution Dashboard</title>
+  <style>
+    :root {
+      --bg: #0d1117;
+      --card-bg: #161b22;
+      --border: #30363d;
+      --text: #c9d1d9;
+      --text-bright: #f0f6fc;
+      --accent: #58a6ff;
+      --success: #238636;
+      --success-light: #2ea043;
+      --warning: #d29922;
+      --danger: #da3633;
+      --pending: #21262d;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      padding: 24px;
+      line-height: 1.5;
+    }
+
+    .container { max-width: 1280px; margin: 0 auto; }
+    
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 20px;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 24px;
+    }
+
+    h1 { font-size: 24px; color: var(--text-bright); display: flex; align-items: center; gap: 10px; }
+    .badge {
+      font-size: 12px;
+      padding: 4px 10px;
+      border-radius: 20px;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+    .badge-locked { background: #388bfd26; color: var(--accent); border: 1px solid #388bfd4d; }
+    .badge-revealed { background: #23863633; color: #3fb950; border: 1px solid #23863666; }
+
+    .metrics-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 16px;
+    }
+
+    .card-label { font-size: 13px; color: #8b949e; text-transform: uppercase; letter-spacing: 0.5px; }
+    .card-value { font-size: 28px; font-weight: 700; color: var(--text-bright); margin-top: 6px; }
+
+    .progress-container {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 24px;
+    }
+
+    .progress-header { display: flex; justify-content: space-between; margin-bottom: 10px; font-weight: 600; }
+    .progress-bar-bg {
+      height: 16px;
+      background: #21262d;
+      border-radius: 8px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .progress-bar-fill {
+      height: 100%;
+      background: linear-gradient(90deg, #238636, #2ea043, #3fb950);
+      width: 0%;
+      transition: width 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .section-title { font-size: 18px; color: var(--text-bright); margin-bottom: 14px; }
+
+    .slots-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(105px, 1fr));
+      gap: 10px;
+      margin-bottom: 28px;
+    }
+
+    .slot-item {
+      background: var(--pending);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 10px;
+      text-align: center;
+      transition: all 0.2s;
+    }
+
+    .slot-num { font-size: 11px; color: #8b949e; font-weight: 600; }
+    .slot-word { font-size: 14px; font-weight: 700; color: var(--text-bright); margin: 4px 0; word-break: break-word; }
+    .slot-user { font-size: 11px; color: var(--accent); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+    .slot-accepted { background: #23863622; border-color: #2ea04388; }
+    .slot-organizer { background: #d2992222; border-color: #d2992288; }
+    .slot-pending .slot-word { color: #484f58; font-weight: 400; }
+
+    .revealed-message-box {
+      display: none;
+      background: #2386361a;
+      border: 1px solid #2ea043;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 24px;
+      text-align: center;
+    }
+
+    .revealed-sentence { font-size: 22px; font-weight: 700; color: #3fb950; margin-top: 8px; }
+
+    .activity-list {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 16px;
+      max-height: 250px;
+      overflow-y: auto;
+    }
+
+    .activity-item {
+      padding: 8px 0;
+      border-bottom: 1px solid #21262d;
+      font-size: 13px;
+      display: flex;
+      justify-content: space-between;
+    }
+    .activity-item:last-child { border-bottom: none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div>
+        <h1>MUKTI — One Contribution, One Community</h1>
+        <p style="color: #8b949e; font-size: 14px; margin-top: 4px;" id="event-id">Loading event details...</p>
+      </div>
+      <div>
+        <span class="badge badge-locked" id="reveal-badge">FINAL MESSAGE: LOCKED 🔒</span>
+      </div>
+    </header>
+
+    <div class="revealed-message-box" id="revealed-box">
+      <div style="font-size: 13px; text-transform: uppercase; letter-spacing: 1px; color: #7ee787;">🎉 Full Message Unlocked</div>
+      <div class="revealed-sentence" id="revealed-sentence"></div>
+    </div>
+
+    <div class="metrics-grid">
+      <div class="card">
+        <div class="card-label">Total Participants</div>
+        <div class="card-value" id="val-total">0</div>
+      </div>
+      <div class="card">
+        <div class="card-label">Accepted Words</div>
+        <div class="card-value" style="color: #3fb950;" id="val-accepted">0</div>
+      </div>
+      <div class="card">
+        <div class="card-label">Pending Slots</div>
+        <div class="card-value" style="color: #8b949e;" id="val-pending">0</div>
+      </div>
+      <div class="card">
+        <div class="card-label">Organizer Completed</div>
+        <div class="card-value" style="color: var(--warning);" id="val-organizer">0</div>
+      </div>
+      <div class="card">
+        <div class="card-label">Rejected Attempts</div>
+        <div class="card-value" style="color: var(--danger);" id="val-rejected">0</div>
+      </div>
+      <div class="card">
+        <div class="card-label">Completion</div>
+        <div class="card-value" id="val-pct">0%</div>
+      </div>
+    </div>
+
+    <div class="progress-container">
+      <div class="progress-header">
+        <span>Community Assembly Progress</span>
+        <span id="progress-summary">0 / 0 Slots (0%)</span>
+      </div>
+      <div class="progress-bar-bg">
+        <div class="progress-bar-fill" id="progress-bar"></div>
+      </div>
+    </div>
+
+    <div class="section-title">Community Slots Live Matrix</div>
+    <div class="slots-grid" id="slots-container">
+      <!-- Dynamically filled -->
+    </div>
+
+    <div class="section-title">Recent Activity Feed</div>
+    <div class="activity-list" id="activity-container">
+      <div style="color: #8b949e; text-align: center; padding: 20px;">Waiting for contributions...</div>
+    </div>
+  </div>
+
+  <script>
+    async function loadData() {
+      try {
+        const configRes = await fetch('/api/config');
+        const stateRes = await fetch('/api/state');
+        const config = await configRes.json();
+        const state = await stateRes.json();
+        render(config, state);
+      } catch (err) {
+        console.warn('Live API unavailable; trying fallback local file fetch:', err);
+        try {
+          const config = await (await fetch('../event-config.json')).json();
+          const state = await (await fetch('../event-state.json')).json();
+          render(config, state);
+        } catch (e) {
+          console.error('Could not load event data:', e);
+        }
+      }
+    }
+
+    function render(config, state) {
+      document.getElementById('event-id').innerText = `Event ID: ${config.eventId || 'N/A'}`;
+      
+      const total = config.totalParticipants || 0;
+      const accepted = state.acceptedCount || 0;
+      const organizer = state.organizerCompletedCount || 0;
+      const rejected = state.rejectedCount || 0;
+      const filled = accepted + organizer;
+      const pending = Math.max(0, total - filled);
+      const pct = total > 0 ? Math.round((filled / total) * 100) : 0;
+
+      document.getElementById('val-total').innerText = total;
+      document.getElementById('val-accepted').innerText = accepted;
+      document.getElementById('val-pending').innerText = pending;
+      document.getElementById('val-organizer').innerText = organizer;
+      document.getElementById('val-rejected').innerText = rejected;
+      document.getElementById('val-pct').innerText = `${pct}%`;
+
+      document.getElementById('progress-summary').innerText = `${filled} / ${total} Slots (${pct}%)`;
+      document.getElementById('progress-bar').style.width = `${pct}%`;
+
+      const isRevealed = state.revealStatus === 'REVEALED';
+      const badge = document.getElementById('reveal-badge');
+      if (isRevealed) {
+        badge.className = 'badge badge-revealed';
+        badge.innerText = 'FINAL MESSAGE: REVEALED 🏆';
+        document.getElementById('revealed-box').style.display = 'block';
+        document.getElementById('revealed-sentence').innerText = config.secretSentence;
+      } else {
+        badge.className = 'badge badge-locked';
+        badge.innerText = 'FINAL MESSAGE: LOCKED 🔒';
+        document.getElementById('revealed-box').style.display = 'none';
+      }
+
+      // Render slots
+      const slotsContainer = document.getElementById('slots-container');
+      slotsContainer.innerHTML = '';
+
+      for (let i = 1; i <= total; i++) {
+        const slotKey = String(i);
+        const slotData = state.slots && state.slots[slotKey];
+        const isAcc = slotData && slotData.status === 'accepted';
+        const isOrg = slotData && slotData.status === 'organizer-completed';
+
+        const div = document.createElement('div');
+        div.className = `slot-item ${isAcc ? 'slot-accepted' : isOrg ? 'slot-organizer' : 'slot-pending'}`;
+
+        let wordDisplay = '••••';
+        let userDisplay = 'Pending';
+
+        if (isAcc) {
+          wordDisplay = slotData.word || slotData.expectedWord;
+          userDisplay = `@${slotData.contributor || 'user'}`;
+        } else if (isOrg) {
+          wordDisplay = slotData.word || slotData.expectedWord;
+          userDisplay = `[Org]`;
+        } else if (isRevealed) {
+          const s = config.slots.find(item => item.slot === i);
+          wordDisplay = s ? s.word : '••••';
+        }
+
+        div.innerHTML = `
+          <div class="slot-num">SLOT #${i}</div>
+          <div class="slot-word">${wordDisplay}</div>
+          <div class="slot-user" title="${userDisplay}">${userDisplay}</div>
+        `;
+        slotsContainer.appendChild(div);
+      }
+
+      // Render activity feed
+      const actContainer = document.getElementById('activity-container');
+      if (state.activityLog && state.activityLog.length > 0) {
+        actContainer.innerHTML = '';
+        const recent = [...state.activityLog].reverse().slice(0, 15);
+        for (const item of recent) {
+          const row = document.createElement('div');
+          row.className = 'activity-item';
+          const time = new Date(item.timestamp).toLocaleTimeString();
+          let text = item.message || '';
+          if (item.type === 'CONTRIBUTION_ACCEPTED') {
+            text = `✅ Slot #${item.slot} accepted ("${item.word}") from @${item.contributor}`;
+          } else if (item.type === 'CONTRIBUTION_REJECTED') {
+            text = `❌ PR rejected from @${item.author}: ${item.error}`;
+          } else if (item.type === 'ORGANIZER_COMPLETED_SLOT') {
+            text = `🔧 Slot #${item.slot} fulfilled by ${item.completedBy}`;
+          }
+          row.innerHTML = `<span>${text}</span><span style="color:#8b949e; font-size:11px;">${time}</span>`;
+          actContainer.appendChild(row);
+        }
+      }
+    }
+
+    loadData();
+    setInterval(loadData, 3000);
+  </script>
+</body>
+</html>

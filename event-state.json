@@ -1,7 +1,140 @@
 {
-  "eventId": "mukti-1793816537825",
-  "acceptedCount": 0,
+  "eventId": "mukti-1793818642219",
   "totalSlots": 10,
+  "acceptedCount": 0,
+  "pendingCount": 10,
+  "rejectedCount": 0,
+  "organizerCompletedCount": 0,
+  "revealStatus": "LOCKED",
+  "slots": {
+    "1": {
+      "slot": 1,
+      "expectedWord": "Open",
+      "status": "pending",
+      "prNumber": null,
+      "contributor": null,
+      "acceptedAt": null,
+      "completedBy": null,
+      "attemptCount": 0,
+      "commitSha": null,
+      "errorDetails": null
+    },
+    "2": {
+      "slot": 2,
+      "expectedWord": "source",
+      "status": "pending",
+      "prNumber": null,
+      "contributor": null,
+      "acceptedAt": null,
+      "completedBy": null,
+      "attemptCount": 0,
+      "commitSha": null,
+      "errorDetails": null
+    },
+    "3": {
+      "slot": 3,
+      "expectedWord": "brings",
+      "status": "pending",
+      "prNumber": null,
+      "contributor": null,
+      "acceptedAt": null,
+      "completedBy": null,
+      "attemptCount": 0,
+      "commitSha": null,
+      "errorDetails": null
+    },
+    "4": {
+      "slot": 4,
+      "expectedWord": "people",
+      "status": "pending",
+      "prNumber": null,
+      "contributor": null,
+      "acceptedAt": null,
+      "completedBy": null,
+      "attemptCount": 0,
+      "commitSha": null,
+      "errorDetails": null
+    },
+    "5": {
+      "slot": 5,
+      "expectedWord": "together",
+      "status": "pending",
+      "prNumber": null,
+      "contributor": null,
+      "acceptedAt": null,
+      "completedBy": null,
+      "attemptCount": 0,
+      "commitSha": null,
+      "errorDetails": null
+    },
+    "6": {
+      "slot": 6,
+      "expectedWord": "to",
+      "status": "pending",
+      "prNumber": null,
+      "contributor": null,
+      "acceptedAt": null,
+      "completedBy": null,
+      "attemptCount": 0,
+      "commitSha": null,
+      "errorDetails": null
+    },
+    "7": {
+      "slot": 7,
+      "expectedWord": "build",
+      "status": "pending",
+      "prNumber": null,
+      "contributor": null,
+      "acceptedAt": null,
+      "completedBy": null,
+      "attemptCount": 0,
+      "commitSha": null,
+      "errorDetails": null
+    },
+    "8": {
+      "slot": 8,
+      "expectedWord": "remarkable",
+      "status": "pending",
+      "prNumber": null,
+      "contributor": null,
+      "acceptedAt": null,
+      "completedBy": null,
+      "attemptCount": 0,
+      "commitSha": null,
+      "errorDetails": null
+    },
+    "9": {
+      "slot": 9,
+      "expectedWord": "community",
+      "status": "pending",
+      "prNumber": null,
+      "contributor": null,
+      "acceptedAt": null,
+      "completedBy": null,
+      "attemptCount": 0,
+      "commitSha": null,
+      "errorDetails": null
+    },
+    "10": {
+      "slot": 10,
+      "expectedWord": "solutions",
+      "status": "pending",
+      "prNumber": null,
+      "contributor": null,
+      "acceptedAt": null,
+      "completedBy": null,
+      "attemptCount": 0,
+      "commitSha": null,
+      "errorDetails": null
+    }
+  },
   "contributions": {},
-  "lastUpdated": "2026-11-04T18:22:17.829Z"
+  "activityLog": [
+    {
+      "timestamp": "2026-11-04T18:57:22.224Z",
+      "type": "EVENT_INITIALIZED",
+      "message": "Event initialized with 10 slots."
+    }
+  ],
+  "lastUpdated": "2026-11-04T18:57:22.225Z"
 }
