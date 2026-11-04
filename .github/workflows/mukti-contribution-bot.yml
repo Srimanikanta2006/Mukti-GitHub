@@ -1,0 +1,39 @@
+name: "MUKTI Automated PR Contribution Bot"
+
+on:
+  pull_request_target:
+    types: [opened, synchronize, reopened]
+
+# Serialized processing queue: Prevents race conditions and lost updates
+concurrency:
+  group: mukti-merge-queue
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+
+jobs:
+  process-contribution:
+    name: "Validate & Deterministically Reconstruct Contribution"
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: "Checkout repository base (main)"
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: "Setup Node.js Runtime"
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: "Process Participant PR"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: |
+          node src/github/bot-action.js

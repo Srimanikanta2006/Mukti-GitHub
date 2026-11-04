@@ -1,0 +1,69 @@
+{
+  "version": "1.0.0",
+  "eventId": "mukti-1793816537825",
+  "totalParticipants": 10,
+  "secretSentence": "Open source brings people together to build remarkable community solutions",
+  "slots": [
+    {
+      "slot": 1,
+      "word": "Open",
+      "participantId": "001",
+      "githubUsername": "*"
+    },
+    {
+      "slot": 2,
+      "word": "source",
+      "participantId": "002",
+      "githubUsername": "*"
+    },
+    {
+      "slot": 3,
+      "word": "brings",
+      "participantId": "003",
+      "githubUsername": "*"
+    },
+    {
+      "slot": 4,
+      "word": "people",
+      "participantId": "004",
+      "githubUsername": "*"
+    },
+    {
+      "slot": 5,
+      "word": "together",
+      "participantId": "005",
+      "githubUsername": "*"
+    },
+    {
+      "slot": 6,
+      "word": "to",
+      "participantId": "006",
+      "githubUsername": "*"
+    },
+    {
+      "slot": 7,
+      "word": "build",
+      "participantId": "007",
+      "githubUsername": "*"
+    },
+    {
+      "slot": 8,
+      "word": "remarkable",
+      "participantId": "008",
+      "githubUsername": "*"
+    },
+    {
+      "slot": 9,
+      "word": "community",
+      "participantId": "009",
+      "githubUsername": "*"
+    },
+    {
+      "slot": 10,
+      "word": "solutions",
+      "participantId": "010",
+      "githubUsername": "*"
+    }
+  ],
+  "createdAt": "2026-11-04T18:22:17.825Z"
+}

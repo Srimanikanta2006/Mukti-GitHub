@@ -38,3 +38,4 @@ fs.writeFileSync(outputPath, JSON.stringify(data, null, 2), 'utf8');
 console.log(`✅ Successfully generated assignments.json with ${words.length} slots!`);
 console.log(`\nREADME Sentence Slot String:`);
 console.log(Array.from({ length: words.length }, (_, i) => i + 1).join(' '));
+

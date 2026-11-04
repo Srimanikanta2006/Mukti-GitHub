@@ -1,0 +1,24 @@
+{
+  "name": "mukti-github-automation",
+  "version": "1.0.0",
+  "description": "MUKTI - One Contribution, One Community: Automated PR Validation, Conflict-Free Deterministic Reconstruction, and Event Workflow",
+  "main": "src/index.js",
+  "scripts": {
+    "setup": "node src/cli/setup.js",
+    "test": "node scripts/run-all-tests.js",
+    "demo": "node tests/full-simulation.test.js",
+    "verify": "node src/cli/verify.js"
+  },
+  "keywords": [
+    "mukti",
+    "git",
+    "github-actions",
+    "deterministic-merge",
+    "open-source-workshop"
+  ],
+  "author": "MUKTI Organizing Team",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
