@@ -1,0 +1,187 @@
+name: "MUKTI Automated PR Resolution & Merge Bot"
+
+on:
+  pull_request_target:
+    types: [opened, synchronize, reopened]
+
+# Ensure only ONE PR is processed at a time to prevent race conditions & lost updates
+concurrency:
+  group: mukti-merge-queue
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+
+jobs:
+  resolve-and-merge:
+    name: "Validate & Deterministically Merge Word"
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: "Checkout repository base (main)"
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: "Set up Node.js"
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: "Process PR Contribution"
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const fs = require('fs');
+            const path = require('path');
+            
+            const pr = context.payload.pull_request;
+            const prNumber = pr.number;
+            const author = pr.user.login;
+            const baseSha = pr.base.sha;
+            const headSha = pr.head.sha;
+
+            console.log(`Processing PR #${prNumber} by @${author}`);
+
+            // 1. Load authoritative assignments
+            const assignmentsPath = path.join(process.cwd(), 'assignments.json');
+            if (!fs.existsSync(assignmentsPath)) {
+              throw new Error('assignments.json not found in repository root!');
+            }
+            const assignmentsData = JSON.parse(fs.readFileSync(assignmentsPath, 'utf8'));
+
+            // 2. Fetch participant README from PR head via GitHub API
+            let participantReadmeContent = '';
+            try {
+              const { data: fileData } = await github.rest.repos.getContent({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                path: 'README.md',
+                ref: headSha
+              });
+              participantReadmeContent = Buffer.from(fileData.content, 'base64').toString('utf8');
+            } catch (err) {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: prNumber,
+                body: `❌ **Could not read README.md from your PR branch.**\nPlease make sure your branch contains \`README.md\` at the root of the repository.`
+              });
+              core.setFailed('Could not retrieve README.md from PR');
+              return;
+            }
+
+            // 3. Fetch original base README
+            let baseReadmeContent = '';
+            try {
+              const { data: baseData } = await github.rest.repos.getContent({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                path: 'README.md',
+                ref: baseSha
+              });
+              baseReadmeContent = Buffer.from(baseData.content, 'base64').toString('utf8');
+            } catch (err) {
+              // Fallback to local main if base commit content retrieval fails
+              baseReadmeContent = fs.readFileSync(path.join(process.cwd(), 'README.md'), 'utf8');
+            }
+
+            // 4. Load Deterministic Reconstructor
+            const Reconstructor = require('./scripts/deterministic-reconstructor.js');
+            const reconstructor = new Reconstructor(assignmentsPath);
+
+            // 5. Detect contribution
+            const detection = reconstructor.detectContribution(baseReadmeContent, participantReadmeContent);
+            if (!detection.valid) {
+              const msg = `❌ **Validation Error**\n\n${detection.error}\n\n*Please adjust your edit and push an update to this branch.*`;
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: prNumber,
+                body: msg
+              });
+              core.setFailed(detection.error);
+              return;
+            }
+
+            console.log(`Detected Slot #${detection.slot} -> "${detection.word}"`);
+
+            // 6. Validate against assignments registry
+            const validation = reconstructor.validateAssignment(detection.slot, detection.word, author);
+            if (!validation.valid) {
+              const msg = `⚠️ **Assignment Check Failed**\n\n${validation.error}\n\n*Make sure you are contributing your designated word for your assigned slot.*`;
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: prNumber,
+                body: msg
+              });
+              core.setFailed(validation.error);
+              return;
+            }
+
+            // 7. Read current main README.md
+            const currentMainPath = path.join(process.cwd(), 'README.md');
+            const currentMainContent = fs.readFileSync(currentMainPath, 'utf8');
+
+            // 8. Apply contribution deterministically
+            const applyResult = reconstructor.applyContributionToMain(currentMainContent, detection.slot, detection.word);
+            if (!applyResult.success) {
+              const msg = `⚠️ **Merge Blocked**\n\n${applyResult.error}`;
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: prNumber,
+                body: msg
+              });
+              core.setFailed(applyResult.error);
+              return;
+            }
+
+            // 9. Write and commit updated README directly to main
+            fs.writeFileSync(currentMainPath, applyResult.updatedContent, 'utf8');
+
+            const { execSync } = require('child_process');
+            execSync('git config user.name "Mukti Bot"');
+            execSync('git config user.email "bot@mukti.org"');
+            execSync('git add README.md');
+            const commitMessage = `Merge contribution for slot #${detection.slot} (${detection.word}) from @${author} (#${prNumber})\n\nCo-authored-by: ${author} <${author}@users.noreply.github.com>`;
+            execSync(`git commit -m "${commitMessage.replace(/"/g, '\\"')}"`);
+            execSync('git push origin main');
+
+            // 10. Generate progress bar & comment
+            const filled = applyResult.stats.completedSlots;
+            const total = applyResult.stats.totalSlots;
+            const pct = applyResult.stats.percentComplete;
+            const barLength = 20;
+            const filledChars = Math.round((pct / 100) * barLength);
+            const progressBar = '█'.repeat(filledChars) + '░'.repeat(barLength - filledChars);
+
+            const commentBody = `🎉 **Success @${author}!**\n\n` +
+              `Your assigned word **"${detection.word}"** has been verified and merged into **Slot #${detection.slot}**!\n\n` +
+              `### 📊 Secret Message Progress: ${filled}/${total} Words (${pct}%)\n` +
+              `\`[${progressBar}]\`\n\n` +
+              `> ${applyResult.reconstructedSentence}\n\n` +
+              `Thank you for contributing to **MUKTI — One Contribution, One Community**! 🌟`;
+
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: prNumber,
+              body: commentBody
+            });
+
+            // 11. Close the PR as completed
+            await github.rest.pulls.update({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              pull_number: prNumber,
+              state: 'closed'
+            });
+
+            console.log(`Successfully merged slot #${detection.slot} and closed PR #${prNumber}`);
+

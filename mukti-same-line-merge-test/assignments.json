@@ -1,0 +1,17 @@
+{
+  "totalSlots": 10,
+  "secretMessage": "Open source brings people together to build remarkable community solutions",
+  "assignments": [
+    { "slot": 1, "word": "Open", "participantId": "001", "githubUsername": "alice" },
+    { "slot": 2, "word": "source", "participantId": "002", "githubUsername": "bob" },
+    { "slot": 3, "word": "brings", "participantId": "003", "githubUsername": "charlie" },
+    { "slot": 4, "word": "people", "participantId": "004", "githubUsername": "david" },
+    { "slot": 5, "word": "together", "participantId": "005", "githubUsername": "emma" },
+    { "slot": 6, "word": "to", "participantId": "006", "githubUsername": "frank" },
+    { "slot": 7, "word": "build", "participantId": "007", "githubUsername": "grace" },
+    { "slot": 8, "word": "remarkable", "participantId": "008", "githubUsername": "heidi" },
+    { "slot": 9, "word": "community", "participantId": "009", "githubUsername": "ivan" },
+    { "slot": 10, "word": "solutions", "participantId": "010", "githubUsername": "judy" }
+  ]
+}
+
