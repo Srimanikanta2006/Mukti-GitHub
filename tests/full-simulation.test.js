@@ -63,13 +63,9 @@ function runFullSimulation() {
 
   const participantBranches = {};
   for (const p of participants) {
-    const tokens = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10'];
-    tokens[p.slot - 1] = p.word;
-    const modifiedSentence = tokens.join(' ');
-    
-    // Each participant's README branched from base
-    participantBranches[p.slot] = baseReadme.replace('1 2 3 4 5 6 7 8 9 10', modifiedSentence);
-    console.log(`   - Participant #${p.slot} (@${p.user}): Replaced ${p.slot} -> "${p.word}"`);
+    // Each participant replaces their line: e.g. "7. 7" -> "7. build"
+    participantBranches[p.slot] = baseReadme.replace(`${p.slot}. ${p.slot}`, `${p.slot}. ${p.word}`);
+    console.log(`   - Participant #${p.slot} (@${p.user}): Replaced ${p.slot}. ${p.slot} -> "${p.slot}. ${p.word}"`);
   }
 
   // 3. Process PRs in NON-SEQUENTIAL / SHUFFLED order (Requirement 3)
@@ -103,14 +99,15 @@ function runFullSimulation() {
   const finalReadmeContent = fs.readFileSync(path.join(testDir, 'README.md'), 'utf8');
   const finalSentence = ReadmeBuilder.extractSentence(finalReadmeContent).sentence;
 
-  console.log(`\nFinal Sentence:\n"${finalSentence}"`);
-  assert.strictEqual(finalSentence, targetSentence, 'Final sentence does not match target message verbatim');
+  console.log(`\nFinal Sentence:\n${finalSentence}`);
+  const finalWords = finalSentence.split(/\r?\n/).map(l => l.replace(/^\d+[\.\:]\s*/, '').trim());
+  assert.strictEqual(finalWords.join(' '), targetSentence, 'Final sentence does not match target message verbatim');
+  assert.strictEqual(ReadmeBuilder.buildSentence(config, finalState, { singleLine: true }), targetSentence);
   console.log('✅ Final sentence matches target message 100% verbatim!');
 
   // Verify all 10 words exist in correct order
   for (let i = 0; i < 10; i++) {
-    const wordInSentence = finalSentence.split(/\s+/)[i];
-    assert.strictEqual(wordInSentence, targetWords[i]);
+    assert.strictEqual(finalWords[i], targetWords[i]);
   }
   console.log('✅ All 10 words preserved in their exact designated positions without conflict!');
 

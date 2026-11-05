@@ -61,12 +61,13 @@ function runUnitTests() {
   };
 
   const reconstructedSentence = ReadmeBuilder.buildSentence(testConfig, testState);
-  assert.strictEqual(reconstructedSentence, 'Alpha 2 3 Delta 5');
-  console.log(`   ✅ Sentence reconstructed deterministically: "${reconstructedSentence}"`);
+  assert.strictEqual(reconstructedSentence, '1. Alpha\n2. 2\n3. 3\n4. Delta\n5. 5');
+  assert.strictEqual(ReadmeBuilder.buildSentence(testConfig, testState, { singleLine: true }), 'Alpha 2 3 Delta 5');
+  console.log(`   ✅ Sentence reconstructed deterministically (line-by-line): \n${reconstructedSentence}`);
 
   const fullReadme = ReadmeBuilder.buildReadme(testConfig, testState);
   const extracted = ReadmeBuilder.extractSentence(fullReadme);
-  assert.strictEqual(extracted.sentence, 'Alpha 2 3 Delta 5');
+  assert.strictEqual(extracted.sentence, '1. Alpha\n2. 2\n3. 3\n4. Delta\n5. 5');
   console.log('   ✅ Full README generated and extracted with intact sentence tags.');
 
   console.log('✅ Unit Tests Passed!\n');

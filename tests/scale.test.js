@@ -69,11 +69,11 @@ function runScaleTests() {
   // 4. Verify README rendered for 137 slots
   const initialReadme137 = ReadmeBuilder.buildReadme(loaded137, { contributions: {} });
   const sentenceLine137 = ReadmeBuilder.extractSentence(initialReadme137).sentence;
-  const tokens137 = sentenceLine137.split(/\s+/).filter(Boolean);
-  assert.strictEqual(tokens137.length, 137);
-  assert.strictEqual(tokens137[0], '1');
-  assert.strictEqual(tokens137[136], '137');
-  console.log('   ✅ README generated with single line containing numbered slots 1 to 137.');
+  const lines137 = sentenceLine137.split(/\r?\n/).filter(Boolean);
+  assert.strictEqual(lines137.length, 137);
+  assert.strictEqual(lines137[0], '1. 1');
+  assert.strictEqual(lines137[136], '137. 137');
+  console.log('   ✅ README generated with line-by-line numbered slots 1 to 137.');
 
   // 5. Verify Backup archive of previous 10-person event was created
   const backups = fs.readdirSync(path.join(testDir, 'backups'));

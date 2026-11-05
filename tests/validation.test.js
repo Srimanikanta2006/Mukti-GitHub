@@ -37,7 +37,7 @@ function runValidationTests() {
 
   // Test 1: Valid PR
   console.log('1. Testing valid PR (Bob for slot 2)...');
-  const bobReadme = baseReadme.replace('1 2 3 4 5', '1 source 3 4 5');
+  const bobReadme = baseReadme.replace('2. 2', '2. source');
   const val1 = PrValidator.validate({
     changedFiles: ['README.md'],
     baseContent: baseReadme,
@@ -67,7 +67,7 @@ function runValidationTests() {
 
   // Test 3: Word mismatch (Requirement 5)
   console.log('3. Testing invalid word assignment...');
-  const wrongWordReadme = baseReadme.replace('1 2 3 4 5', '1 wrongword 3 4 5');
+  const wrongWordReadme = baseReadme.replace('2. 2', '2. wrongword');
   const val3 = PrValidator.validate({
     changedFiles: ['README.md'],
     baseContent: baseReadme,
@@ -96,7 +96,7 @@ function runValidationTests() {
 
   // Test 5: Duplicate submission on already accepted slot (Requirement 6)
   console.log('5. Testing duplicate submission on already accepted slot...');
-  const duplicateSlot1Readme = baseReadme.replace('1 2 3 4 5', 'Open 2 3 4 5');
+  const duplicateSlot1Readme = baseReadme.replace('1. 1', '1. Open');
   const val5 = PrValidator.validate({
     changedFiles: ['README.md'],
     baseContent: baseReadme,
@@ -125,7 +125,7 @@ function runValidationTests() {
 
   // Test 7: Participant modifies multiple slots
   console.log('7. Testing multiple slot modifications...');
-  const multiSlotReadme = baseReadme.replace('1 2 3 4 5', '1 source brings 4 5');
+  const multiSlotReadme = baseReadme.replace('2. 2', '2. source').replace('3. 3', '3. brings');
   const val7 = PrValidator.validate({
     changedFiles: ['README.md'],
     baseContent: baseReadme,

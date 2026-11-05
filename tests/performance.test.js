@@ -42,15 +42,8 @@ function runPerformanceBenchmark() {
   const prPayloads = [];
   for (let i = 1; i <= totalParticipants; i++) {
     const word = words[i - 1];
-    const initialTokens = Array.from({ length: totalParticipants }, (_, idx) => String(idx + 1));
-    initialTokens[i - 1] = word;
-    const modifiedSentence = initialTokens.join(' ');
-    const prReadme = baseReadme.replace(
-      ReadmeBuilder.extractSentence(baseReadme).sentence,
-      modifiedSentence
-    );
-
-    prPayloads.push({
+    const prReadme = baseReadme.replace(`${i}. ${i}`, `${i}. ${word}`);
+prPayloads.push({
       prNumber: 1000 + i,
       slot: i,
       word: word,
@@ -96,7 +89,8 @@ function runPerformanceBenchmark() {
   const finalReadme = fs.readFileSync(path.join(testDir, 'README.md'), 'utf8');
   const finalSentence = ReadmeBuilder.extractSentence(finalReadme).sentence;
 
-  assert.strictEqual(finalSentence, sentence, 'Final reconstructed sentence does not match original target verbatim');
+  const finalWords = finalSentence.split(/\r?\n/).map(l => l.replace(/^\d+[\.\:]\s*/, '').trim());
+  assert.strictEqual(finalWords.join(' '), sentence, 'Final reconstructed sentence does not match original target verbatim');
 
   console.log(`\n📊 200-PR BENCHMARK RESULTS:`);
   console.log(`   - Total PRs Processed:      ${totalParticipants}`);

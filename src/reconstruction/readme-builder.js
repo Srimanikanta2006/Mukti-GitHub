@@ -12,12 +12,14 @@ const SENTENCE_END_TAG = '<!-- MUKTI-SENTENCE-END -->';
 
 class ReadmeBuilder {
   /**
-   * Reconstruct the single-line collaborative sentence from config and state.
+   * Reconstruct the collaborative sentence from config and state.
+   * By default, formats line-by-line (e.g. "1. Open\n2. source...") for zero merge conflicts.
    * @param {object} eventConfig - Authoritative event configuration
    * @param {object} eventState - Authoritative accepted contributions ledger
-   * @returns {string} - Deterministically generated sentence line
+   * @param {object} [options] - Optional formatting options ({ singleLine: boolean })
+   * @returns {string} - Deterministically generated sentence text
    */
-  static buildSentence(eventConfig, eventState) {
+  static buildSentence(eventConfig, eventState, options = {}) {
     const totalSlots = eventConfig.totalParticipants;
     const tokens = [];
 
@@ -37,7 +39,11 @@ class ReadmeBuilder {
       }
     }
 
-    return tokens.join(' ');
+    if (options.singleLine) {
+      return tokens.join(' ');
+    }
+
+    return tokens.map((token, idx) => `${idx + 1}. ${token}`).join('\n');
   }
 
   /**
@@ -117,6 +123,27 @@ ${SENTENCE_END_TAG}
    \`\`\`
 7. **Open a Pull Request:** Go to your fork on GitHub and click **Compare & pull request**.
 8. **Automated verification:** The Mukti Bot will automatically validate your submission, merge your word, update the sentence, and comment with live progress! 🎉
+
+---
+
+## 📋 Contribution Guidelines
+
+- Replace only your assigned number.
+- Do not modify other participants' numbers or words.
+- Do not change anything outside the contribution section.
+- Submit your Pull Request to the original MUKTI repository.
+
+**That's it! You've made your first contribution to MUKTI. 🎉**
+
+*One word from you. One step forward for the community.*
+
+---
+
+<div align="center">
+
+**Built with ❤️ for the Mukti Git & Open Source Contribution Workshop**
+
+</div>
 `;
   }
 

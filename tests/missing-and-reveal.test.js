@@ -33,10 +33,7 @@ function runMissingAndRevealTests() {
   // 1. Simulate 7 participants contributing out of 10
   console.log('1. Simulating 7 out of 10 participants contributing...');
   for (let slot = 1; slot <= 7; slot++) {
-    const tokens = Array.from({ length: 10 }, (_, i) => String(i + 1));
-    tokens[slot - 1] = words[slot - 1];
-    const modifiedSentence = tokens.join(' ');
-    const prReadme = baseReadme.replace('1 2 3 4 5 6 7 8 9 10', modifiedSentence);
+    const prReadme = baseReadme.replace(`${slot}. ${slot}`, `${slot}. ${words[slot - 1]}`);
 
     const res = processor.process({
       prNumber: 300 + slot,

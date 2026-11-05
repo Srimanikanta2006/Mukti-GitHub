@@ -32,8 +32,8 @@ function runResilienceTests() {
   // Test 1: Concurrency serialization simulation (Requirement 10)
   console.log('1. Testing simultaneous PR submission serialization...');
   // Two PRs arrive simultaneously: PR A (slot 1) and PR B (slot 3)
-  const prAReadme = baseReadme.replace('1 2 3 4 5', 'Open 2 3 4 5');
-  const prBReadme = baseReadme.replace('1 2 3 4 5', '1 2 brings 4 5');
+  const prAReadme = baseReadme.replace('1. 1', '1. Open');
+  const prBReadme = baseReadme.replace('3. 3', '3. brings');
 
   // Both processed through the serialized processor queue:
   const resA = processor.process({
@@ -62,8 +62,8 @@ function runResilienceTests() {
 
   const currentReadme = fs.readFileSync(path.join(testDir, 'README.md'), 'utf8');
   const sentence = ReadmeBuilder.extractSentence(currentReadme).sentence;
-  assert.strictEqual(sentence, 'Open 2 brings 4 5');
-  console.log(`   ✅ Concurrent PRs serialized without lost updates: "${sentence}"`);
+  assert.strictEqual(sentence, '1. Open\n2. 2\n3. brings\n4. 4\n5. 5');
+  console.log(`   ✅ Concurrent PRs serialized without lost updates: \n${sentence}`);
 
   // Test 2: Workflow crashes halfway & atomicity (Requirement 11)
   console.log('2. Testing halfway crash simulation & atomic rollback...');
@@ -89,7 +89,7 @@ function runResilienceTests() {
   // Test 3: Safe resumption without losing accepted contributions (Requirement 12)
   console.log('3. Testing safe resumption and processing next PR...');
   // Next PR: Bob for slot 2
-  const bobReadme = baseReadme.replace('1 2 3 4 5', '1 source 3 4 5');
+  const bobReadme = baseReadme.replace('2. 2', '2. source');
   const resResume = processor.process({
     prNumber: 103,
     author: 'bob',
@@ -106,8 +106,8 @@ function runResilienceTests() {
   assert.ok(stateResumed.contributions['3']); // Charlie preserved
 
   const sentenceResumed = ReadmeBuilder.extractSentence(fs.readFileSync(path.join(testDir, 'README.md'), 'utf8')).sentence;
-  assert.strictEqual(sentenceResumed, 'Open source brings 4 5');
-  console.log(`   ✅ System safely resumed; all prior words preserved: "${sentenceResumed}"`);
+  assert.strictEqual(sentenceResumed, '1. Open\n2. source\n3. brings\n4. 4\n5. 5');
+  console.log(`   ✅ System safely resumed; all prior words preserved: \n${sentenceResumed}`);
 
   // Clean up
   fs.rmSync(testDir, { recursive: true, force: true });

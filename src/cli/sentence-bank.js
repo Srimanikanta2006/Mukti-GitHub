@@ -27,11 +27,10 @@ const EXPANSION_VOCABULARY = [
   "everyone", "everywhere", "amplifying", "underrepresented", "voices", "and", "celebrating", "interdisciplinary", "teamwork", "while",
   "advancing", "modern", "data", "science", "cloud", "computing", "artificial", "intelligence", "and", "open",
   "standards", "for", "the", "greater", "good", "of", "global", "humanity", "enriching", "educational",
-  "opportunities", "lowering", "technical", "entry", "hurdles", "and", "inspiring", "lifelong", "learning", "throughout",
-  "every", "stage", "of", "the", "software", "development", "lifecycle", "strengthening", "resilience", "in",
-  "times", "of", "rapid", "technological", "change", "and", "reaffirming", "our", "shared", "dedication",
-  "to", "transparency", "cooperation", "and", "uncompromising", "excellence", "in", "every", "line", "of",
-  "code", "we", "write", "and", "share", "together", "as", "one", "unified", "global", "open", "source", "family"
+  "opportunities", "lowering", "hurdles", "and", "inspiring", "learning", "strengthening", "resilience", "in", "times",
+  "of", "rapid", "technological", "change", "our", "shared", "dedication", "to", "transparency", "cooperation",
+  "and", "uncompromising", "excellence", "in", "every", "line", "of", "code", "we", "write",
+  "and", "share", "together", "as", "one", "unified", "global", "open", "source", "family"
 ];
 
 const FULL_VOCABULARY = [...BASE_VOCABULARY, ...EXPANSION_VOCABULARY];
