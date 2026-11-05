@@ -51,8 +51,16 @@ class PrValidator {
       };
     }
 
-    const baseTokens = baseExtracted.sentence.split(/\s+/).filter(Boolean);
-    const prTokens = prExtracted.sentence.split(/\s+/).filter(Boolean);
+    const parseTokens = (str) => {
+      const lines = str.split(/\r?\n/).map(l => l.trim()).filter(Boolean);
+      if (lines.length > 1) {
+        return lines.map(l => l.replace(/^\d+[\.\:]\s*/, '').trim()).filter(Boolean);
+      }
+      return str.split(/\s+/).filter(Boolean);
+    };
+
+    const baseTokens = parseTokens(baseExtracted.sentence);
+    const prTokens = parseTokens(prExtracted.sentence);
 
     // 3. Token count validation
     if (prTokens.length !== eventConfig.totalParticipants) {

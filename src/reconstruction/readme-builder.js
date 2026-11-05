@@ -107,16 +107,13 @@ ${SENTENCE_END_TAG}
    git clone https://github.com/<your-username>/Mukti-GitHub.git
    cd Mukti-GitHub
    \`\`\`
-4. **Create your contribution branch:**
-   \`\`\`bash
-   git checkout -b contrib-<your-slot-number>
-   \`\`\`
-5. **Make your edit:** Open \`README.md\`, find your assigned number in the single sentence above, and replace **ONLY** that number with your assigned word. Do not modify any other numbers or files!
+4. **Find your assigned line:** Open \`README.md\`, find your assigned number line under *The Secret Sentence* above (e.g. \`1. 1\`).
+5. **Replace only your number:** Change your line to your assigned word (e.g. \`1. Open\`). Leave all other lines and numbers untouched!
 6. **Commit and push:**
    \`\`\`bash
    git add README.md
-   git commit -m "Replace slot <your-slot-number> with assigned word"
-   git push origin contrib-<your-slot-number>
+   git commit -m "Add MUKTI contribution #<your-slot-number>"
+   git push origin main
    \`\`\`
 7. **Open a Pull Request:** Go to your fork on GitHub and click **Compare & pull request**.
 8. **Automated verification:** The Mukti Bot will automatically validate your submission, merge your word, update the sentence, and comment with live progress! 🎉
@@ -133,8 +130,9 @@ ${SENTENCE_END_TAG}
     const endIndex = lines.findIndex(l => l.includes(SENTENCE_END_TAG));
 
     if (startIndex !== -1 && endIndex !== -1 && endIndex > startIndex + 1) {
+      const sentenceText = lines.slice(startIndex + 1, endIndex).join('\n').trim();
       return {
-        sentence: lines[startIndex + 1].trim(),
+        sentence: sentenceText,
         lineIndex: startIndex + 1,
         lines: lines,
         hasTags: true
