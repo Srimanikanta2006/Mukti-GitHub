@@ -17,7 +17,7 @@ Each participant is assigned a specific number (and a secret word by the organiz
 ## 📜 The Secret Sentence
 
 <!-- MUKTI-SENTENCE-START -->
-1 2 3 4 5 6 7 8 9 10
+Open 2 3 4 5 6 7 8 9 10
 <!-- MUKTI-SENTENCE-END -->
 
 ---
@@ -26,7 +26,7 @@ Each participant is assigned a specific number (and a secret word by the organiz
 
 `[░░░░░░░░░░░░░░░░░░░░]`
 
-*Status: **LOCKED** | Last updated: 2026-11-04T18:57:22.220Z*
+*Status: **LOCKED** | Last updated: 2026-11-04T18:57:22.225Z*
 
 ---
 

@@ -1,8 +1,8 @@
 {
   "eventId": "mukti-1793818642219",
   "totalSlots": 10,
-  "acceptedCount": 0,
-  "pendingCount": 10,
+  "acceptedCount": 1,
+  "pendingCount": 9,
   "rejectedCount": 0,
   "organizerCompletedCount": 0,
   "revealStatus": "LOCKED",
@@ -10,13 +10,14 @@
     "1": {
       "slot": 1,
       "expectedWord": "Open",
-      "status": "pending",
-      "prNumber": null,
-      "contributor": null,
-      "acceptedAt": null,
+      "word": "Open",
+      "status": "accepted",
+      "prNumber": 203,
+      "contributor": "Sanjana-087",
+      "acceptedAt": "2026-11-05T05:46:11.427Z",
       "completedBy": null,
-      "attemptCount": 0,
-      "commitSha": null,
+      "attemptCount": 1,
+      "commitSha": "b4fa1fe1ffc4055e458ce2dbb87546a61396f5d0",
       "errorDetails": null
     },
     "2": {
@@ -128,13 +129,31 @@
       "errorDetails": null
     }
   },
-  "contributions": {},
+  "contributions": {
+    "1": {
+      "slot": 1,
+      "word": "Open",
+      "contributor": "Sanjana-087",
+      "prNumber": 203,
+      "commitSha": "b4fa1fe1ffc4055e458ce2dbb87546a61396f5d0",
+      "status": "accepted",
+      "timestamp": "2026-11-05T05:46:11.427Z"
+    }
+  },
   "activityLog": [
     {
       "timestamp": "2026-11-04T18:57:22.224Z",
       "type": "EVENT_INITIALIZED",
       "message": "Event initialized with 10 slots."
+    },
+    {
+      "timestamp": "2026-11-05T05:46:11.427Z",
+      "type": "CONTRIBUTION_ACCEPTED",
+      "slot": 1,
+      "word": "Open",
+      "contributor": "Sanjana-087",
+      "prNumber": 203
     }
   ],
-  "lastUpdated": "2026-11-04T18:57:22.225Z"
+  "lastUpdated": "2026-11-05T05:46:11.428Z"
 }
