@@ -1,8 +1,8 @@
 {
   "eventId": "mukti-closing-sentence",
-  "acceptedCount": 0,
+  "acceptedCount": 1,
   "totalSlots": 200,
-  "pendingCount": 200,
+  "pendingCount": 199,
   "rejectedCount": 0,
   "organizerCompletedCount": 0,
   "revealStatus": "LOCKED",
@@ -82,13 +82,14 @@
     "7": {
       "slot": 7,
       "expectedWord": "a",
-      "status": "pending",
-      "prNumber": null,
-      "contributor": null,
-      "acceptedAt": null,
+      "word": "a",
+      "status": "accepted",
+      "prNumber": 208,
+      "contributor": "Tekh-ops",
+      "acceptedAt": "2026-11-05T12:21:55.467Z",
       "completedBy": null,
-      "attemptCount": 0,
-      "commitSha": null,
+      "attemptCount": 1,
+      "commitSha": "9c046274d5888e7ed1b5cb9f9ee00caf5ddb999a",
       "errorDetails": null
     },
     "8": {
@@ -2408,13 +2409,31 @@
       "errorDetails": null
     }
   },
-  "contributions": {},
+  "contributions": {
+    "7": {
+      "slot": 7,
+      "word": "a",
+      "contributor": "Tekh-ops",
+      "prNumber": 208,
+      "commitSha": "9c046274d5888e7ed1b5cb9f9ee00caf5ddb999a",
+      "status": "accepted",
+      "timestamp": "2026-11-05T12:21:55.467Z"
+    }
+  },
   "activityLog": [
     {
       "timestamp": "2026-11-05T07:28:48.360Z",
       "type": "EVENT_INITIALIZED",
       "message": "MUKTI workshop event initialized with 200 participants and custom closing sentence."
+    },
+    {
+      "timestamp": "2026-11-05T12:21:55.467Z",
+      "type": "CONTRIBUTION_ACCEPTED",
+      "slot": 7,
+      "word": "a",
+      "contributor": "Tekh-ops",
+      "prNumber": 208
     }
   ],
-  "lastUpdated": "2026-11-05T07:28:48.373Z"
+  "lastUpdated": "2026-11-05T12:21:55.468Z"
 }
