@@ -1,1206 +1,1202 @@
-{
-  "totalSlots": 200,
-  "secretMessage": "Open source brings people together to build remarkable community solutions empowering passionate creators worldwide to collaborate transparently and craft extraordinary technology fostering inclusive environments where diverse knowledge is freely shared across borders enabling every developer designer and thinker to solve complex global challenges through relentless innovation mutual respect and shared human progress proving that dedicated individuals united by common principles can break down barriers accelerate scientific discovery champion accessibility and engineer resilient digital infrastructure that uplifts society protects freedom and illuminates a brighter more equitable future for all generations to come reminding us that each small contribution ignites infinite potential cultivating open dialogue where curiosity sparks creativity and collaboration conquers adversity nurturing trust through peer review ethical stewardship and sustainable maintainer practices transforming ambitious aspirations into practical systems that benefit everyone everywhere amplifying underrepresented voices and celebrating interdisciplinary teamwork while advancing modern data science cloud computing artificial intelligence and open standards for the greater good of global humanity enriching educational opportunities lowering hurdles and inspiring learning strengthening resilience in times of rapid technological change our shared dedication to transparency cooperation and uncompromising excellence in every line of code we write and share together as one unified global open source family",
-  "assignments": [
-    {
-      "slot": 1,
-      "word": "Open",
-      "participantId": "001",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 2,
-      "word": "source",
-      "participantId": "002",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 3,
-      "word": "brings",
-      "participantId": "003",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 4,
-      "word": "people",
-      "participantId": "004",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 5,
-      "word": "together",
-      "participantId": "005",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 6,
-      "word": "to",
-      "participantId": "006",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 7,
-      "word": "build",
-      "participantId": "007",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 8,
-      "word": "remarkable",
-      "participantId": "008",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 9,
-      "word": "community",
-      "participantId": "009",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 10,
-      "word": "solutions",
-      "participantId": "010",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 11,
-      "word": "empowering",
-      "participantId": "011",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 12,
-      "word": "passionate",
-      "participantId": "012",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 13,
-      "word": "creators",
-      "participantId": "013",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 14,
-      "word": "worldwide",
-      "participantId": "014",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 15,
-      "word": "to",
-      "participantId": "015",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 16,
-      "word": "collaborate",
-      "participantId": "016",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 17,
-      "word": "transparently",
-      "participantId": "017",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 18,
-      "word": "and",
-      "participantId": "018",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 19,
-      "word": "craft",
-      "participantId": "019",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 20,
-      "word": "extraordinary",
-      "participantId": "020",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 21,
-      "word": "technology",
-      "participantId": "021",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 22,
-      "word": "fostering",
-      "participantId": "022",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 23,
-      "word": "inclusive",
-      "participantId": "023",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 24,
-      "word": "environments",
-      "participantId": "024",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 25,
-      "word": "where",
-      "participantId": "025",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 26,
-      "word": "diverse",
-      "participantId": "026",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 27,
-      "word": "knowledge",
-      "participantId": "027",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 28,
-      "word": "is",
-      "participantId": "028",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 29,
-      "word": "freely",
-      "participantId": "029",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 30,
-      "word": "shared",
-      "participantId": "030",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 31,
-      "word": "across",
-      "participantId": "031",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 32,
-      "word": "borders",
-      "participantId": "032",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 33,
-      "word": "enabling",
-      "participantId": "033",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 34,
-      "word": "every",
-      "participantId": "034",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 35,
-      "word": "developer",
-      "participantId": "035",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 36,
-      "word": "designer",
-      "participantId": "036",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 37,
-      "word": "and",
-      "participantId": "037",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 38,
-      "word": "thinker",
-      "participantId": "038",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 39,
-      "word": "to",
-      "participantId": "039",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 40,
-      "word": "solve",
-      "participantId": "040",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 41,
-      "word": "complex",
-      "participantId": "041",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 42,
-      "word": "global",
-      "participantId": "042",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 43,
-      "word": "challenges",
-      "participantId": "043",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 44,
-      "word": "through",
-      "participantId": "044",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 45,
-      "word": "relentless",
-      "participantId": "045",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 46,
-      "word": "innovation",
-      "participantId": "046",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 47,
-      "word": "mutual",
-      "participantId": "047",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 48,
-      "word": "respect",
-      "participantId": "048",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 49,
-      "word": "and",
-      "participantId": "049",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 50,
-      "word": "shared",
-      "participantId": "050",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 51,
-      "word": "human",
-      "participantId": "051",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 52,
-      "word": "progress",
-      "participantId": "052",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 53,
-      "word": "proving",
-      "participantId": "053",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 54,
-      "word": "that",
-      "participantId": "054",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 55,
-      "word": "dedicated",
-      "participantId": "055",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 56,
-      "word": "individuals",
-      "participantId": "056",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 57,
-      "word": "united",
-      "participantId": "057",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 58,
-      "word": "by",
-      "participantId": "058",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 59,
-      "word": "common",
-      "participantId": "059",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 60,
-      "word": "principles",
-      "participantId": "060",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 61,
-      "word": "can",
-      "participantId": "061",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 62,
-      "word": "break",
-      "participantId": "062",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 63,
-      "word": "down",
-      "participantId": "063",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 64,
-      "word": "barriers",
-      "participantId": "064",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 65,
-      "word": "accelerate",
-      "participantId": "065",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 66,
-      "word": "scientific",
-      "participantId": "066",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 67,
-      "word": "discovery",
-      "participantId": "067",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 68,
-      "word": "champion",
-      "participantId": "068",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 69,
-      "word": "accessibility",
-      "participantId": "069",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 70,
-      "word": "and",
-      "participantId": "070",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 71,
-      "word": "engineer",
-      "participantId": "071",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 72,
-      "word": "resilient",
-      "participantId": "072",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 73,
-      "word": "digital",
-      "participantId": "073",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 74,
-      "word": "infrastructure",
-      "participantId": "074",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 75,
-      "word": "that",
-      "participantId": "075",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 76,
-      "word": "uplifts",
-      "participantId": "076",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 77,
-      "word": "society",
-      "participantId": "077",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 78,
-      "word": "protects",
-      "participantId": "078",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 79,
-      "word": "freedom",
-      "participantId": "079",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 80,
-      "word": "and",
-      "participantId": "080",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 81,
-      "word": "illuminates",
-      "participantId": "081",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 82,
-      "word": "a",
-      "participantId": "082",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 83,
-      "word": "brighter",
-      "participantId": "083",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 84,
-      "word": "more",
-      "participantId": "084",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 85,
-      "word": "equitable",
-      "participantId": "085",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 86,
-      "word": "future",
-      "participantId": "086",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 87,
-      "word": "for",
-      "participantId": "087",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 88,
-      "word": "all",
-      "participantId": "088",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 89,
-      "word": "generations",
-      "participantId": "089",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 90,
-      "word": "to",
-      "participantId": "090",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 91,
-      "word": "come",
-      "participantId": "091",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 92,
-      "word": "reminding",
-      "participantId": "092",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 93,
-      "word": "us",
-      "participantId": "093",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 94,
-      "word": "that",
-      "participantId": "094",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 95,
-      "word": "each",
-      "participantId": "095",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 96,
-      "word": "small",
-      "participantId": "096",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 97,
-      "word": "contribution",
-      "participantId": "097",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 98,
-      "word": "ignites",
-      "participantId": "098",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 99,
-      "word": "infinite",
-      "participantId": "099",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 100,
-      "word": "potential",
-      "participantId": "100",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 101,
-      "word": "cultivating",
-      "participantId": "101",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 102,
-      "word": "open",
-      "participantId": "102",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 103,
-      "word": "dialogue",
-      "participantId": "103",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 104,
-      "word": "where",
-      "participantId": "104",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 105,
-      "word": "curiosity",
-      "participantId": "105",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 106,
-      "word": "sparks",
-      "participantId": "106",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 107,
-      "word": "creativity",
-      "participantId": "107",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 108,
-      "word": "and",
-      "participantId": "108",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 109,
-      "word": "collaboration",
-      "participantId": "109",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 110,
-      "word": "conquers",
-      "participantId": "110",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 111,
-      "word": "adversity",
-      "participantId": "111",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 112,
-      "word": "nurturing",
-      "participantId": "112",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 113,
-      "word": "trust",
-      "participantId": "113",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 114,
-      "word": "through",
-      "participantId": "114",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 115,
-      "word": "peer",
-      "participantId": "115",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 116,
-      "word": "review",
-      "participantId": "116",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 117,
-      "word": "ethical",
-      "participantId": "117",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 118,
-      "word": "stewardship",
-      "participantId": "118",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 119,
-      "word": "and",
-      "participantId": "119",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 120,
-      "word": "sustainable",
-      "participantId": "120",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 121,
-      "word": "maintainer",
-      "participantId": "121",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 122,
-      "word": "practices",
-      "participantId": "122",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 123,
-      "word": "transforming",
-      "participantId": "123",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 124,
-      "word": "ambitious",
-      "participantId": "124",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 125,
-      "word": "aspirations",
-      "participantId": "125",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 126,
-      "word": "into",
-      "participantId": "126",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 127,
-      "word": "practical",
-      "participantId": "127",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 128,
-      "word": "systems",
-      "participantId": "128",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 129,
-      "word": "that",
-      "participantId": "129",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 130,
-      "word": "benefit",
-      "participantId": "130",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 131,
-      "word": "everyone",
-      "participantId": "131",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 132,
-      "word": "everywhere",
-      "participantId": "132",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 133,
-      "word": "amplifying",
-      "participantId": "133",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 134,
-      "word": "underrepresented",
-      "participantId": "134",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 135,
-      "word": "voices",
-      "participantId": "135",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 136,
-      "word": "and",
-      "participantId": "136",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 137,
-      "word": "celebrating",
-      "participantId": "137",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 138,
-      "word": "interdisciplinary",
-      "participantId": "138",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 139,
-      "word": "teamwork",
-      "participantId": "139",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 140,
-      "word": "while",
-      "participantId": "140",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 141,
-      "word": "advancing",
-      "participantId": "141",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 142,
-      "word": "modern",
-      "participantId": "142",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 143,
-      "word": "data",
-      "participantId": "143",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 144,
-      "word": "science",
-      "participantId": "144",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 145,
-      "word": "cloud",
-      "participantId": "145",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 146,
-      "word": "computing",
-      "participantId": "146",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 147,
-      "word": "artificial",
-      "participantId": "147",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 148,
-      "word": "intelligence",
-      "participantId": "148",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 149,
-      "word": "and",
-      "participantId": "149",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 150,
-      "word": "open",
-      "participantId": "150",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 151,
-      "word": "standards",
-      "participantId": "151",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 152,
-      "word": "for",
-      "participantId": "152",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 153,
-      "word": "the",
-      "participantId": "153",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 154,
-      "word": "greater",
-      "participantId": "154",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 155,
-      "word": "good",
-      "participantId": "155",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 156,
-      "word": "of",
-      "participantId": "156",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 157,
-      "word": "global",
-      "participantId": "157",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 158,
-      "word": "humanity",
-      "participantId": "158",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 159,
-      "word": "enriching",
-      "participantId": "159",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 160,
-      "word": "educational",
-      "participantId": "160",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 161,
-      "word": "opportunities",
-      "participantId": "161",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 162,
-      "word": "lowering",
-      "participantId": "162",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 163,
-      "word": "hurdles",
-      "participantId": "163",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 164,
-      "word": "and",
-      "participantId": "164",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 165,
-      "word": "inspiring",
-      "participantId": "165",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 166,
-      "word": "learning",
-      "participantId": "166",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 167,
-      "word": "strengthening",
-      "participantId": "167",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 168,
-      "word": "resilience",
-      "participantId": "168",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 169,
-      "word": "in",
-      "participantId": "169",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 170,
-      "word": "times",
-      "participantId": "170",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 171,
-      "word": "of",
-      "participantId": "171",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 172,
-      "word": "rapid",
-      "participantId": "172",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 173,
-      "word": "technological",
-      "participantId": "173",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 174,
-      "word": "change",
-      "participantId": "174",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 175,
-      "word": "our",
-      "participantId": "175",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 176,
-      "word": "shared",
-      "participantId": "176",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 177,
-      "word": "dedication",
-      "participantId": "177",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 178,
-      "word": "to",
-      "participantId": "178",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 179,
-      "word": "transparency",
-      "participantId": "179",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 180,
-      "word": "cooperation",
-      "participantId": "180",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 181,
-      "word": "and",
-      "participantId": "181",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 182,
-      "word": "uncompromising",
-      "participantId": "182",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 183,
-      "word": "excellence",
-      "participantId": "183",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 184,
-      "word": "in",
-      "participantId": "184",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 185,
-      "word": "every",
-      "participantId": "185",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 186,
-      "word": "line",
-      "participantId": "186",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 187,
-      "word": "of",
-      "participantId": "187",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 188,
-      "word": "code",
-      "participantId": "188",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 189,
-      "word": "we",
-      "participantId": "189",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 190,
-      "word": "write",
-      "participantId": "190",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 191,
-      "word": "and",
-      "participantId": "191",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 192,
-      "word": "share",
-      "participantId": "192",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 193,
-      "word": "together",
-      "participantId": "193",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 194,
-      "word": "as",
-      "participantId": "194",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 195,
-      "word": "one",
-      "participantId": "195",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 196,
-      "word": "unified",
-      "participantId": "196",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 197,
-      "word": "global",
-      "participantId": "197",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 198,
-      "word": "open",
-      "participantId": "198",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 199,
-      "word": "source",
-      "participantId": "199",
-      "githubUsername": "*"
-    },
-    {
-      "slot": 200,
-      "word": "family",
-      "participantId": "200",
-      "githubUsername": "*"
-    }
-  ]
-}
+[
+  {
+    "slot": 1,
+    "word": "As",
+    "participantId": "001",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 2,
+    "word": "the",
+    "participantId": "002",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 3,
+    "word": "MUKTI",
+    "participantId": "003",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 4,
+    "word": "event",
+    "participantId": "004",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 5,
+    "word": "comes",
+    "participantId": "005",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 6,
+    "word": "to",
+    "participantId": "006",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 7,
+    "word": "a",
+    "participantId": "007",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 8,
+    "word": "close",
+    "participantId": "008",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 9,
+    "word": "we",
+    "participantId": "009",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 10,
+    "word": "celebrate",
+    "participantId": "010",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 11,
+    "word": "the",
+    "participantId": "011",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 12,
+    "word": "contributions",
+    "participantId": "012",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 13,
+    "word": "made",
+    "participantId": "013",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 14,
+    "word": "today",
+    "participantId": "014",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 15,
+    "word": "and",
+    "participantId": "015",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 16,
+    "word": "the",
+    "participantId": "016",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 17,
+    "word": "people",
+    "participantId": "017",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 18,
+    "word": "ideas",
+    "participantId": "018",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 19,
+    "word": "and",
+    "participantId": "019",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 20,
+    "word": "spirit",
+    "participantId": "020",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 21,
+    "word": "that",
+    "participantId": "021",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 22,
+    "word": "brought",
+    "participantId": "022",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 23,
+    "word": "us",
+    "participantId": "023",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 24,
+    "word": "together",
+    "participantId": "024",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 25,
+    "word": "Every",
+    "participantId": "025",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 26,
+    "word": "participant",
+    "participantId": "026",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 27,
+    "word": "added",
+    "participantId": "027",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 28,
+    "word": "one",
+    "participantId": "028",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 29,
+    "word": "word",
+    "participantId": "029",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 30,
+    "word": "yet",
+    "participantId": "030",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 31,
+    "word": "those",
+    "participantId": "031",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 32,
+    "word": "words",
+    "participantId": "032",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 33,
+    "word": "became",
+    "participantId": "033",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 34,
+    "word": "a",
+    "participantId": "034",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 35,
+    "word": "message",
+    "participantId": "035",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 36,
+    "word": "no",
+    "participantId": "036",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 37,
+    "word": "individual",
+    "participantId": "037",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 38,
+    "word": "could",
+    "participantId": "038",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 39,
+    "word": "create",
+    "participantId": "039",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 40,
+    "word": "alone",
+    "participantId": "040",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 41,
+    "word": "This",
+    "participantId": "041",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 42,
+    "word": "is",
+    "participantId": "042",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 43,
+    "word": "the",
+    "participantId": "043",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 44,
+    "word": "power",
+    "participantId": "044",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 45,
+    "word": "of",
+    "participantId": "045",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 46,
+    "word": "open",
+    "participantId": "046",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 47,
+    "word": "source",
+    "participantId": "047",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 48,
+    "word": "people",
+    "participantId": "048",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 49,
+    "word": "with",
+    "participantId": "049",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 50,
+    "word": "different",
+    "participantId": "050",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 51,
+    "word": "experiences",
+    "participantId": "051",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 52,
+    "word": "learning",
+    "participantId": "052",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 53,
+    "word": "building",
+    "participantId": "053",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 54,
+    "word": "improving",
+    "participantId": "054",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 55,
+    "word": "and",
+    "participantId": "055",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 56,
+    "word": "creating",
+    "participantId": "056",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 57,
+    "word": "together",
+    "participantId": "057",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 58,
+    "word": "The",
+    "participantId": "058",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 59,
+    "word": "MUKTI",
+    "participantId": "059",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 60,
+    "word": "club",
+    "participantId": "060",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 61,
+    "word": "encourages",
+    "participantId": "061",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 62,
+    "word": "this",
+    "participantId": "062",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 63,
+    "word": "spirit",
+    "participantId": "063",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 64,
+    "word": "by",
+    "participantId": "064",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 65,
+    "word": "creating",
+    "participantId": "065",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 66,
+    "word": "opportunities",
+    "participantId": "066",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 67,
+    "word": "to",
+    "participantId": "067",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 68,
+    "word": "explore",
+    "participantId": "068",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 69,
+    "word": "technology",
+    "participantId": "069",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 70,
+    "word": "share",
+    "participantId": "070",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 71,
+    "word": "knowledge",
+    "participantId": "071",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 72,
+    "word": "support",
+    "participantId": "072",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 73,
+    "word": "beginners",
+    "participantId": "073",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 74,
+    "word": "and",
+    "participantId": "074",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 75,
+    "word": "participate",
+    "participantId": "075",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 76,
+    "word": "in",
+    "participantId": "076",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 77,
+    "word": "the",
+    "participantId": "077",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 78,
+    "word": "open",
+    "participantId": "078",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 79,
+    "word": "source",
+    "participantId": "079",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 80,
+    "word": "community",
+    "participantId": "080",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 81,
+    "word": "Today",
+    "participantId": "081",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 82,
+    "word": "we",
+    "participantId": "082",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 83,
+    "word": "practised",
+    "participantId": "083",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 84,
+    "word": "forking",
+    "participantId": "084",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 85,
+    "word": "repositories",
+    "participantId": "085",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 86,
+    "word": "creating",
+    "participantId": "086",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 87,
+    "word": "branches",
+    "participantId": "087",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 88,
+    "word": "submitting",
+    "participantId": "088",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 89,
+    "word": "pull",
+    "participantId": "089",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 90,
+    "word": "requests",
+    "participantId": "090",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 91,
+    "word": "and",
+    "participantId": "091",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 92,
+    "word": "reviewing",
+    "participantId": "092",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 93,
+    "word": "code",
+    "participantId": "093",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 94,
+    "word": "More",
+    "participantId": "094",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 95,
+    "word": "importantly",
+    "participantId": "095",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 96,
+    "word": "we",
+    "participantId": "096",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 97,
+    "word": "experienced",
+    "participantId": "097",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 98,
+    "word": "how",
+    "participantId": "098",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 99,
+    "word": "individual",
+    "participantId": "099",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 100,
+    "word": "efforts",
+    "participantId": "100",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 101,
+    "word": "combine",
+    "participantId": "101",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 102,
+    "word": "into",
+    "participantId": "102",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 103,
+    "word": "something",
+    "participantId": "103",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 104,
+    "word": "meaningful",
+    "participantId": "104",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 105,
+    "word": "Every",
+    "participantId": "105",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 106,
+    "word": "issue",
+    "participantId": "106",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 107,
+    "word": "opened",
+    "participantId": "107",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 108,
+    "word": "every",
+    "participantId": "108",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 109,
+    "word": "change",
+    "participantId": "109",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 110,
+    "word": "proposed",
+    "participantId": "110",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 111,
+    "word": "and",
+    "participantId": "111",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 112,
+    "word": "every",
+    "participantId": "112",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 113,
+    "word": "pull",
+    "participantId": "113",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 114,
+    "word": "request",
+    "participantId": "114",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 115,
+    "word": "merged",
+    "participantId": "115",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 116,
+    "word": "represented",
+    "participantId": "116",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 117,
+    "word": "curiosity",
+    "participantId": "117",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 118,
+    "word": "courage",
+    "participantId": "118",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 119,
+    "word": "and",
+    "participantId": "119",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 120,
+    "word": "collaboration",
+    "participantId": "120",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 121,
+    "word": "To",
+    "participantId": "121",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 122,
+    "word": "everyone",
+    "participantId": "122",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 123,
+    "word": "who",
+    "participantId": "123",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 124,
+    "word": "participated",
+    "participantId": "124",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 125,
+    "word": "thank",
+    "participantId": "125",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 126,
+    "word": "you",
+    "participantId": "126",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 127,
+    "word": "for",
+    "participantId": "127",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 128,
+    "word": "bringing",
+    "participantId": "128",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 129,
+    "word": "your",
+    "participantId": "129",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 130,
+    "word": "time",
+    "participantId": "130",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 131,
+    "word": "enthusiasm",
+    "participantId": "131",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 132,
+    "word": "and",
+    "participantId": "132",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 133,
+    "word": "ideas",
+    "participantId": "133",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 134,
+    "word": "to",
+    "participantId": "134",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 135,
+    "word": "this",
+    "participantId": "135",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 136,
+    "word": "shared",
+    "participantId": "136",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 137,
+    "word": "creation",
+    "participantId": "137",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 138,
+    "word": "May",
+    "participantId": "138",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 139,
+    "word": "this",
+    "participantId": "139",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 140,
+    "word": "be",
+    "participantId": "140",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 141,
+    "word": "more",
+    "participantId": "141",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 142,
+    "word": "than",
+    "participantId": "142",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 143,
+    "word": "a",
+    "participantId": "143",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 144,
+    "word": "one-day",
+    "participantId": "144",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 145,
+    "word": "activity",
+    "participantId": "145",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 146,
+    "word": "may",
+    "participantId": "146",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 147,
+    "word": "it",
+    "participantId": "147",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 148,
+    "word": "begin",
+    "participantId": "148",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 149,
+    "word": "your",
+    "participantId": "149",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 150,
+    "word": "journey",
+    "participantId": "150",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 151,
+    "word": "as",
+    "participantId": "151",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 152,
+    "word": "contributors",
+    "participantId": "152",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 153,
+    "word": "who",
+    "participantId": "153",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 154,
+    "word": "ask",
+    "participantId": "154",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 155,
+    "word": "questions",
+    "participantId": "155",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 156,
+    "word": "help",
+    "participantId": "156",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 157,
+    "word": "others",
+    "participantId": "157",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 158,
+    "word": "and",
+    "participantId": "158",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 159,
+    "word": "build",
+    "participantId": "159",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 160,
+    "word": "in",
+    "participantId": "160",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 161,
+    "word": "the",
+    "participantId": "161",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 162,
+    "word": "open",
+    "participantId": "162",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 163,
+    "word": "As",
+    "participantId": "163",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 164,
+    "word": "we",
+    "participantId": "164",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 165,
+    "word": "leave",
+    "participantId": "165",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 166,
+    "word": "let",
+    "participantId": "166",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 167,
+    "word": "us",
+    "participantId": "167",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 168,
+    "word": "carry",
+    "participantId": "168",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 169,
+    "word": "forward",
+    "participantId": "169",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 170,
+    "word": "what",
+    "participantId": "170",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 171,
+    "word": "we",
+    "participantId": "171",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 172,
+    "word": "created",
+    "participantId": "172",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 173,
+    "word": "together",
+    "participantId": "173",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 174,
+    "word": "one",
+    "participantId": "174",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 175,
+    "word": "contribution",
+    "participantId": "175",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 176,
+    "word": "one",
+    "participantId": "176",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 177,
+    "word": "connection",
+    "participantId": "177",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 178,
+    "word": "and",
+    "participantId": "178",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 179,
+    "word": "one",
+    "participantId": "179",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 180,
+    "word": "community",
+    "participantId": "180",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 181,
+    "word": "Let",
+    "participantId": "181",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 182,
+    "word": "this",
+    "participantId": "182",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 183,
+    "word": "spirit",
+    "participantId": "183",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 184,
+    "word": "guide",
+    "participantId": "184",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 185,
+    "word": "everything",
+    "participantId": "185",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 186,
+    "word": "we",
+    "participantId": "186",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 187,
+    "word": "build",
+    "participantId": "187",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 188,
+    "word": "next",
+    "participantId": "188",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 189,
+    "word": "This",
+    "participantId": "189",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 190,
+    "word": "is",
+    "participantId": "190",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 191,
+    "word": "MUKTI",
+    "participantId": "191",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 192,
+    "word": "and",
+    "participantId": "192",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 193,
+    "word": "our",
+    "participantId": "193",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 194,
+    "word": "story",
+    "participantId": "194",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 195,
+    "word": "continues",
+    "participantId": "195",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 196,
+    "word": "with",
+    "participantId": "196",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 197,
+    "word": "every",
+    "participantId": "197",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 198,
+    "word": "contribution",
+    "participantId": "198",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 199,
+    "word": "Thank",
+    "participantId": "199",
+    "githubUsername": "*"
+  },
+  {
+    "slot": 200,
+    "word": "you",
+    "participantId": "200",
+    "githubUsername": "*"
+  }
+]

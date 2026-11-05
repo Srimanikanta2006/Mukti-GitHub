@@ -1,36 +1,36 @@
 {
   "version": "1.0.0",
-  "eventId": "mukti-1793863610783",
+  "eventId": "mukti-closing-sentence",
   "totalParticipants": 200,
-  "secretSentence": "Open source brings people together to build remarkable community solutions empowering passionate creators worldwide to collaborate transparently and craft extraordinary technology fostering inclusive environments where diverse knowledge is freely shared across borders enabling every developer designer and thinker to solve complex global challenges through relentless innovation mutual respect and shared human progress proving that dedicated individuals united by common principles can break down barriers accelerate scientific discovery champion accessibility and engineer resilient digital infrastructure that uplifts society protects freedom and illuminates a brighter more equitable future for all generations to come reminding us that each small contribution ignites infinite potential cultivating open dialogue where curiosity sparks creativity and collaboration conquers adversity nurturing trust through peer review ethical stewardship and sustainable maintainer practices transforming ambitious aspirations into practical systems that benefit everyone everywhere amplifying underrepresented voices and celebrating interdisciplinary teamwork while advancing modern data science cloud computing artificial intelligence and open standards for the greater good of global humanity enriching educational opportunities lowering hurdles and inspiring learning strengthening resilience in times of rapid technological change our shared dedication to transparency cooperation and uncompromising excellence in every line of code we write and share together as one unified global open source family",
+  "secretSentence": "As the MUKTI event comes to a close, we celebrate the contributions made today and the people, ideas, and spirit that brought us together. Every participant added one word, yet those words became a message no individual could create alone. This is the power of open source: people with different experiences learning, building, improving, and creating together. The MUKTI club encourages this spirit by creating opportunities to explore technology, share knowledge, support beginners, and participate in the open source community. Today, we practised forking repositories, creating branches, submitting pull requests, and reviewing code. More importantly, we experienced how individual efforts combine into something meaningful. Every issue opened, every change proposed, and every pull request merged represented curiosity, courage, and collaboration. To everyone who participated, thank you for bringing your time, enthusiasm, and ideas to this shared creation. May this be more than a one-day activity; may it begin your journey as contributors who ask questions, help others, and build in the open. As we leave, let us carry forward what we created together: one contribution, one connection, and one community. Let this spirit guide everything we build next. This is MUKTI, and our story continues with every contribution. Thank you",
   "slots": [
     {
       "slot": 1,
-      "word": "Open",
+      "word": "As",
       "participantId": "001",
       "githubUsername": "*"
     },
     {
       "slot": 2,
-      "word": "source",
+      "word": "the",
       "participantId": "002",
       "githubUsername": "*"
     },
     {
       "slot": 3,
-      "word": "brings",
+      "word": "MUKTI",
       "participantId": "003",
       "githubUsername": "*"
     },
     {
       "slot": 4,
-      "word": "people",
+      "word": "event",
       "participantId": "004",
       "githubUsername": "*"
     },
     {
       "slot": 5,
-      "word": "together",
+      "word": "comes",
       "participantId": "005",
       "githubUsername": "*"
     },
@@ -42,673 +42,673 @@
     },
     {
       "slot": 7,
-      "word": "build",
+      "word": "a",
       "participantId": "007",
       "githubUsername": "*"
     },
     {
       "slot": 8,
-      "word": "remarkable",
+      "word": "close",
       "participantId": "008",
       "githubUsername": "*"
     },
     {
       "slot": 9,
-      "word": "community",
+      "word": "we",
       "participantId": "009",
       "githubUsername": "*"
     },
     {
       "slot": 10,
-      "word": "solutions",
+      "word": "celebrate",
       "participantId": "010",
       "githubUsername": "*"
     },
     {
       "slot": 11,
-      "word": "empowering",
+      "word": "the",
       "participantId": "011",
       "githubUsername": "*"
     },
     {
       "slot": 12,
-      "word": "passionate",
+      "word": "contributions",
       "participantId": "012",
       "githubUsername": "*"
     },
     {
       "slot": 13,
-      "word": "creators",
+      "word": "made",
       "participantId": "013",
       "githubUsername": "*"
     },
     {
       "slot": 14,
-      "word": "worldwide",
+      "word": "today",
       "participantId": "014",
       "githubUsername": "*"
     },
     {
       "slot": 15,
-      "word": "to",
+      "word": "and",
       "participantId": "015",
       "githubUsername": "*"
     },
     {
       "slot": 16,
-      "word": "collaborate",
+      "word": "the",
       "participantId": "016",
       "githubUsername": "*"
     },
     {
       "slot": 17,
-      "word": "transparently",
+      "word": "people",
       "participantId": "017",
       "githubUsername": "*"
     },
     {
       "slot": 18,
-      "word": "and",
+      "word": "ideas",
       "participantId": "018",
       "githubUsername": "*"
     },
     {
       "slot": 19,
-      "word": "craft",
+      "word": "and",
       "participantId": "019",
       "githubUsername": "*"
     },
     {
       "slot": 20,
-      "word": "extraordinary",
+      "word": "spirit",
       "participantId": "020",
       "githubUsername": "*"
     },
     {
       "slot": 21,
-      "word": "technology",
+      "word": "that",
       "participantId": "021",
       "githubUsername": "*"
     },
     {
       "slot": 22,
-      "word": "fostering",
+      "word": "brought",
       "participantId": "022",
       "githubUsername": "*"
     },
     {
       "slot": 23,
-      "word": "inclusive",
+      "word": "us",
       "participantId": "023",
       "githubUsername": "*"
     },
     {
       "slot": 24,
-      "word": "environments",
+      "word": "together",
       "participantId": "024",
       "githubUsername": "*"
     },
     {
       "slot": 25,
-      "word": "where",
+      "word": "Every",
       "participantId": "025",
       "githubUsername": "*"
     },
     {
       "slot": 26,
-      "word": "diverse",
+      "word": "participant",
       "participantId": "026",
       "githubUsername": "*"
     },
     {
       "slot": 27,
-      "word": "knowledge",
+      "word": "added",
       "participantId": "027",
       "githubUsername": "*"
     },
     {
       "slot": 28,
-      "word": "is",
+      "word": "one",
       "participantId": "028",
       "githubUsername": "*"
     },
     {
       "slot": 29,
-      "word": "freely",
+      "word": "word",
       "participantId": "029",
       "githubUsername": "*"
     },
     {
       "slot": 30,
-      "word": "shared",
+      "word": "yet",
       "participantId": "030",
       "githubUsername": "*"
     },
     {
       "slot": 31,
-      "word": "across",
+      "word": "those",
       "participantId": "031",
       "githubUsername": "*"
     },
     {
       "slot": 32,
-      "word": "borders",
+      "word": "words",
       "participantId": "032",
       "githubUsername": "*"
     },
     {
       "slot": 33,
-      "word": "enabling",
+      "word": "became",
       "participantId": "033",
       "githubUsername": "*"
     },
     {
       "slot": 34,
-      "word": "every",
+      "word": "a",
       "participantId": "034",
       "githubUsername": "*"
     },
     {
       "slot": 35,
-      "word": "developer",
+      "word": "message",
       "participantId": "035",
       "githubUsername": "*"
     },
     {
       "slot": 36,
-      "word": "designer",
+      "word": "no",
       "participantId": "036",
       "githubUsername": "*"
     },
     {
       "slot": 37,
-      "word": "and",
+      "word": "individual",
       "participantId": "037",
       "githubUsername": "*"
     },
     {
       "slot": 38,
-      "word": "thinker",
+      "word": "could",
       "participantId": "038",
       "githubUsername": "*"
     },
     {
       "slot": 39,
-      "word": "to",
+      "word": "create",
       "participantId": "039",
       "githubUsername": "*"
     },
     {
       "slot": 40,
-      "word": "solve",
+      "word": "alone",
       "participantId": "040",
       "githubUsername": "*"
     },
     {
       "slot": 41,
-      "word": "complex",
+      "word": "This",
       "participantId": "041",
       "githubUsername": "*"
     },
     {
       "slot": 42,
-      "word": "global",
+      "word": "is",
       "participantId": "042",
       "githubUsername": "*"
     },
     {
       "slot": 43,
-      "word": "challenges",
+      "word": "the",
       "participantId": "043",
       "githubUsername": "*"
     },
     {
       "slot": 44,
-      "word": "through",
+      "word": "power",
       "participantId": "044",
       "githubUsername": "*"
     },
     {
       "slot": 45,
-      "word": "relentless",
+      "word": "of",
       "participantId": "045",
       "githubUsername": "*"
     },
     {
       "slot": 46,
-      "word": "innovation",
+      "word": "open",
       "participantId": "046",
       "githubUsername": "*"
     },
     {
       "slot": 47,
-      "word": "mutual",
+      "word": "source",
       "participantId": "047",
       "githubUsername": "*"
     },
     {
       "slot": 48,
-      "word": "respect",
+      "word": "people",
       "participantId": "048",
       "githubUsername": "*"
     },
     {
       "slot": 49,
-      "word": "and",
+      "word": "with",
       "participantId": "049",
       "githubUsername": "*"
     },
     {
       "slot": 50,
-      "word": "shared",
+      "word": "different",
       "participantId": "050",
       "githubUsername": "*"
     },
     {
       "slot": 51,
-      "word": "human",
+      "word": "experiences",
       "participantId": "051",
       "githubUsername": "*"
     },
     {
       "slot": 52,
-      "word": "progress",
+      "word": "learning",
       "participantId": "052",
       "githubUsername": "*"
     },
     {
       "slot": 53,
-      "word": "proving",
+      "word": "building",
       "participantId": "053",
       "githubUsername": "*"
     },
     {
       "slot": 54,
-      "word": "that",
+      "word": "improving",
       "participantId": "054",
       "githubUsername": "*"
     },
     {
       "slot": 55,
-      "word": "dedicated",
+      "word": "and",
       "participantId": "055",
       "githubUsername": "*"
     },
     {
       "slot": 56,
-      "word": "individuals",
+      "word": "creating",
       "participantId": "056",
       "githubUsername": "*"
     },
     {
       "slot": 57,
-      "word": "united",
+      "word": "together",
       "participantId": "057",
       "githubUsername": "*"
     },
     {
       "slot": 58,
-      "word": "by",
+      "word": "The",
       "participantId": "058",
       "githubUsername": "*"
     },
     {
       "slot": 59,
-      "word": "common",
+      "word": "MUKTI",
       "participantId": "059",
       "githubUsername": "*"
     },
     {
       "slot": 60,
-      "word": "principles",
+      "word": "club",
       "participantId": "060",
       "githubUsername": "*"
     },
     {
       "slot": 61,
-      "word": "can",
+      "word": "encourages",
       "participantId": "061",
       "githubUsername": "*"
     },
     {
       "slot": 62,
-      "word": "break",
+      "word": "this",
       "participantId": "062",
       "githubUsername": "*"
     },
     {
       "slot": 63,
-      "word": "down",
+      "word": "spirit",
       "participantId": "063",
       "githubUsername": "*"
     },
     {
       "slot": 64,
-      "word": "barriers",
+      "word": "by",
       "participantId": "064",
       "githubUsername": "*"
     },
     {
       "slot": 65,
-      "word": "accelerate",
+      "word": "creating",
       "participantId": "065",
       "githubUsername": "*"
     },
     {
       "slot": 66,
-      "word": "scientific",
+      "word": "opportunities",
       "participantId": "066",
       "githubUsername": "*"
     },
     {
       "slot": 67,
-      "word": "discovery",
+      "word": "to",
       "participantId": "067",
       "githubUsername": "*"
     },
     {
       "slot": 68,
-      "word": "champion",
+      "word": "explore",
       "participantId": "068",
       "githubUsername": "*"
     },
     {
       "slot": 69,
-      "word": "accessibility",
+      "word": "technology",
       "participantId": "069",
       "githubUsername": "*"
     },
     {
       "slot": 70,
-      "word": "and",
+      "word": "share",
       "participantId": "070",
       "githubUsername": "*"
     },
     {
       "slot": 71,
-      "word": "engineer",
+      "word": "knowledge",
       "participantId": "071",
       "githubUsername": "*"
     },
     {
       "slot": 72,
-      "word": "resilient",
+      "word": "support",
       "participantId": "072",
       "githubUsername": "*"
     },
     {
       "slot": 73,
-      "word": "digital",
+      "word": "beginners",
       "participantId": "073",
       "githubUsername": "*"
     },
     {
       "slot": 74,
-      "word": "infrastructure",
+      "word": "and",
       "participantId": "074",
       "githubUsername": "*"
     },
     {
       "slot": 75,
-      "word": "that",
+      "word": "participate",
       "participantId": "075",
       "githubUsername": "*"
     },
     {
       "slot": 76,
-      "word": "uplifts",
+      "word": "in",
       "participantId": "076",
       "githubUsername": "*"
     },
     {
       "slot": 77,
-      "word": "society",
+      "word": "the",
       "participantId": "077",
       "githubUsername": "*"
     },
     {
       "slot": 78,
-      "word": "protects",
+      "word": "open",
       "participantId": "078",
       "githubUsername": "*"
     },
     {
       "slot": 79,
-      "word": "freedom",
+      "word": "source",
       "participantId": "079",
       "githubUsername": "*"
     },
     {
       "slot": 80,
-      "word": "and",
+      "word": "community",
       "participantId": "080",
       "githubUsername": "*"
     },
     {
       "slot": 81,
-      "word": "illuminates",
+      "word": "Today",
       "participantId": "081",
       "githubUsername": "*"
     },
     {
       "slot": 82,
-      "word": "a",
+      "word": "we",
       "participantId": "082",
       "githubUsername": "*"
     },
     {
       "slot": 83,
-      "word": "brighter",
+      "word": "practised",
       "participantId": "083",
       "githubUsername": "*"
     },
     {
       "slot": 84,
-      "word": "more",
+      "word": "forking",
       "participantId": "084",
       "githubUsername": "*"
     },
     {
       "slot": 85,
-      "word": "equitable",
+      "word": "repositories",
       "participantId": "085",
       "githubUsername": "*"
     },
     {
       "slot": 86,
-      "word": "future",
+      "word": "creating",
       "participantId": "086",
       "githubUsername": "*"
     },
     {
       "slot": 87,
-      "word": "for",
+      "word": "branches",
       "participantId": "087",
       "githubUsername": "*"
     },
     {
       "slot": 88,
-      "word": "all",
+      "word": "submitting",
       "participantId": "088",
       "githubUsername": "*"
     },
     {
       "slot": 89,
-      "word": "generations",
+      "word": "pull",
       "participantId": "089",
       "githubUsername": "*"
     },
     {
       "slot": 90,
-      "word": "to",
+      "word": "requests",
       "participantId": "090",
       "githubUsername": "*"
     },
     {
       "slot": 91,
-      "word": "come",
+      "word": "and",
       "participantId": "091",
       "githubUsername": "*"
     },
     {
       "slot": 92,
-      "word": "reminding",
+      "word": "reviewing",
       "participantId": "092",
       "githubUsername": "*"
     },
     {
       "slot": 93,
-      "word": "us",
+      "word": "code",
       "participantId": "093",
       "githubUsername": "*"
     },
     {
       "slot": 94,
-      "word": "that",
+      "word": "More",
       "participantId": "094",
       "githubUsername": "*"
     },
     {
       "slot": 95,
-      "word": "each",
+      "word": "importantly",
       "participantId": "095",
       "githubUsername": "*"
     },
     {
       "slot": 96,
-      "word": "small",
+      "word": "we",
       "participantId": "096",
       "githubUsername": "*"
     },
     {
       "slot": 97,
-      "word": "contribution",
+      "word": "experienced",
       "participantId": "097",
       "githubUsername": "*"
     },
     {
       "slot": 98,
-      "word": "ignites",
+      "word": "how",
       "participantId": "098",
       "githubUsername": "*"
     },
     {
       "slot": 99,
-      "word": "infinite",
+      "word": "individual",
       "participantId": "099",
       "githubUsername": "*"
     },
     {
       "slot": 100,
-      "word": "potential",
+      "word": "efforts",
       "participantId": "100",
       "githubUsername": "*"
     },
     {
       "slot": 101,
-      "word": "cultivating",
+      "word": "combine",
       "participantId": "101",
       "githubUsername": "*"
     },
     {
       "slot": 102,
-      "word": "open",
+      "word": "into",
       "participantId": "102",
       "githubUsername": "*"
     },
     {
       "slot": 103,
-      "word": "dialogue",
+      "word": "something",
       "participantId": "103",
       "githubUsername": "*"
     },
     {
       "slot": 104,
-      "word": "where",
+      "word": "meaningful",
       "participantId": "104",
       "githubUsername": "*"
     },
     {
       "slot": 105,
-      "word": "curiosity",
+      "word": "Every",
       "participantId": "105",
       "githubUsername": "*"
     },
     {
       "slot": 106,
-      "word": "sparks",
+      "word": "issue",
       "participantId": "106",
       "githubUsername": "*"
     },
     {
       "slot": 107,
-      "word": "creativity",
+      "word": "opened",
       "participantId": "107",
       "githubUsername": "*"
     },
     {
       "slot": 108,
-      "word": "and",
+      "word": "every",
       "participantId": "108",
       "githubUsername": "*"
     },
     {
       "slot": 109,
-      "word": "collaboration",
+      "word": "change",
       "participantId": "109",
       "githubUsername": "*"
     },
     {
       "slot": 110,
-      "word": "conquers",
+      "word": "proposed",
       "participantId": "110",
       "githubUsername": "*"
     },
     {
       "slot": 111,
-      "word": "adversity",
+      "word": "and",
       "participantId": "111",
       "githubUsername": "*"
     },
     {
       "slot": 112,
-      "word": "nurturing",
+      "word": "every",
       "participantId": "112",
       "githubUsername": "*"
     },
     {
       "slot": 113,
-      "word": "trust",
+      "word": "pull",
       "participantId": "113",
       "githubUsername": "*"
     },
     {
       "slot": 114,
-      "word": "through",
+      "word": "request",
       "participantId": "114",
       "githubUsername": "*"
     },
     {
       "slot": 115,
-      "word": "peer",
+      "word": "merged",
       "participantId": "115",
       "githubUsername": "*"
     },
     {
       "slot": 116,
-      "word": "review",
+      "word": "represented",
       "participantId": "116",
       "githubUsername": "*"
     },
     {
       "slot": 117,
-      "word": "ethical",
+      "word": "curiosity",
       "participantId": "117",
       "githubUsername": "*"
     },
     {
       "slot": 118,
-      "word": "stewardship",
+      "word": "courage",
       "participantId": "118",
       "githubUsername": "*"
     },
@@ -720,490 +720,490 @@
     },
     {
       "slot": 120,
-      "word": "sustainable",
+      "word": "collaboration",
       "participantId": "120",
       "githubUsername": "*"
     },
     {
       "slot": 121,
-      "word": "maintainer",
+      "word": "To",
       "participantId": "121",
       "githubUsername": "*"
     },
     {
       "slot": 122,
-      "word": "practices",
+      "word": "everyone",
       "participantId": "122",
       "githubUsername": "*"
     },
     {
       "slot": 123,
-      "word": "transforming",
+      "word": "who",
       "participantId": "123",
       "githubUsername": "*"
     },
     {
       "slot": 124,
-      "word": "ambitious",
+      "word": "participated",
       "participantId": "124",
       "githubUsername": "*"
     },
     {
       "slot": 125,
-      "word": "aspirations",
+      "word": "thank",
       "participantId": "125",
       "githubUsername": "*"
     },
     {
       "slot": 126,
-      "word": "into",
+      "word": "you",
       "participantId": "126",
       "githubUsername": "*"
     },
     {
       "slot": 127,
-      "word": "practical",
+      "word": "for",
       "participantId": "127",
       "githubUsername": "*"
     },
     {
       "slot": 128,
-      "word": "systems",
+      "word": "bringing",
       "participantId": "128",
       "githubUsername": "*"
     },
     {
       "slot": 129,
-      "word": "that",
+      "word": "your",
       "participantId": "129",
       "githubUsername": "*"
     },
     {
       "slot": 130,
-      "word": "benefit",
+      "word": "time",
       "participantId": "130",
       "githubUsername": "*"
     },
     {
       "slot": 131,
-      "word": "everyone",
+      "word": "enthusiasm",
       "participantId": "131",
       "githubUsername": "*"
     },
     {
       "slot": 132,
-      "word": "everywhere",
+      "word": "and",
       "participantId": "132",
       "githubUsername": "*"
     },
     {
       "slot": 133,
-      "word": "amplifying",
+      "word": "ideas",
       "participantId": "133",
       "githubUsername": "*"
     },
     {
       "slot": 134,
-      "word": "underrepresented",
+      "word": "to",
       "participantId": "134",
       "githubUsername": "*"
     },
     {
       "slot": 135,
-      "word": "voices",
+      "word": "this",
       "participantId": "135",
       "githubUsername": "*"
     },
     {
       "slot": 136,
-      "word": "and",
+      "word": "shared",
       "participantId": "136",
       "githubUsername": "*"
     },
     {
       "slot": 137,
-      "word": "celebrating",
+      "word": "creation",
       "participantId": "137",
       "githubUsername": "*"
     },
     {
       "slot": 138,
-      "word": "interdisciplinary",
+      "word": "May",
       "participantId": "138",
       "githubUsername": "*"
     },
     {
       "slot": 139,
-      "word": "teamwork",
+      "word": "this",
       "participantId": "139",
       "githubUsername": "*"
     },
     {
       "slot": 140,
-      "word": "while",
+      "word": "be",
       "participantId": "140",
       "githubUsername": "*"
     },
     {
       "slot": 141,
-      "word": "advancing",
+      "word": "more",
       "participantId": "141",
       "githubUsername": "*"
     },
     {
       "slot": 142,
-      "word": "modern",
+      "word": "than",
       "participantId": "142",
       "githubUsername": "*"
     },
     {
       "slot": 143,
-      "word": "data",
+      "word": "a",
       "participantId": "143",
       "githubUsername": "*"
     },
     {
       "slot": 144,
-      "word": "science",
+      "word": "one-day",
       "participantId": "144",
       "githubUsername": "*"
     },
     {
       "slot": 145,
-      "word": "cloud",
+      "word": "activity",
       "participantId": "145",
       "githubUsername": "*"
     },
     {
       "slot": 146,
-      "word": "computing",
+      "word": "may",
       "participantId": "146",
       "githubUsername": "*"
     },
     {
       "slot": 147,
-      "word": "artificial",
+      "word": "it",
       "participantId": "147",
       "githubUsername": "*"
     },
     {
       "slot": 148,
-      "word": "intelligence",
+      "word": "begin",
       "participantId": "148",
       "githubUsername": "*"
     },
     {
       "slot": 149,
-      "word": "and",
+      "word": "your",
       "participantId": "149",
       "githubUsername": "*"
     },
     {
       "slot": 150,
-      "word": "open",
+      "word": "journey",
       "participantId": "150",
       "githubUsername": "*"
     },
     {
       "slot": 151,
-      "word": "standards",
+      "word": "as",
       "participantId": "151",
       "githubUsername": "*"
     },
     {
       "slot": 152,
-      "word": "for",
+      "word": "contributors",
       "participantId": "152",
       "githubUsername": "*"
     },
     {
       "slot": 153,
-      "word": "the",
+      "word": "who",
       "participantId": "153",
       "githubUsername": "*"
     },
     {
       "slot": 154,
-      "word": "greater",
+      "word": "ask",
       "participantId": "154",
       "githubUsername": "*"
     },
     {
       "slot": 155,
-      "word": "good",
+      "word": "questions",
       "participantId": "155",
       "githubUsername": "*"
     },
     {
       "slot": 156,
-      "word": "of",
+      "word": "help",
       "participantId": "156",
       "githubUsername": "*"
     },
     {
       "slot": 157,
-      "word": "global",
+      "word": "others",
       "participantId": "157",
       "githubUsername": "*"
     },
     {
       "slot": 158,
-      "word": "humanity",
+      "word": "and",
       "participantId": "158",
       "githubUsername": "*"
     },
     {
       "slot": 159,
-      "word": "enriching",
+      "word": "build",
       "participantId": "159",
       "githubUsername": "*"
     },
     {
       "slot": 160,
-      "word": "educational",
+      "word": "in",
       "participantId": "160",
       "githubUsername": "*"
     },
     {
       "slot": 161,
-      "word": "opportunities",
+      "word": "the",
       "participantId": "161",
       "githubUsername": "*"
     },
     {
       "slot": 162,
-      "word": "lowering",
+      "word": "open",
       "participantId": "162",
       "githubUsername": "*"
     },
     {
       "slot": 163,
-      "word": "hurdles",
+      "word": "As",
       "participantId": "163",
       "githubUsername": "*"
     },
     {
       "slot": 164,
-      "word": "and",
+      "word": "we",
       "participantId": "164",
       "githubUsername": "*"
     },
     {
       "slot": 165,
-      "word": "inspiring",
+      "word": "leave",
       "participantId": "165",
       "githubUsername": "*"
     },
     {
       "slot": 166,
-      "word": "learning",
+      "word": "let",
       "participantId": "166",
       "githubUsername": "*"
     },
     {
       "slot": 167,
-      "word": "strengthening",
+      "word": "us",
       "participantId": "167",
       "githubUsername": "*"
     },
     {
       "slot": 168,
-      "word": "resilience",
+      "word": "carry",
       "participantId": "168",
       "githubUsername": "*"
     },
     {
       "slot": 169,
-      "word": "in",
+      "word": "forward",
       "participantId": "169",
       "githubUsername": "*"
     },
     {
       "slot": 170,
-      "word": "times",
+      "word": "what",
       "participantId": "170",
       "githubUsername": "*"
     },
     {
       "slot": 171,
-      "word": "of",
+      "word": "we",
       "participantId": "171",
       "githubUsername": "*"
     },
     {
       "slot": 172,
-      "word": "rapid",
+      "word": "created",
       "participantId": "172",
       "githubUsername": "*"
     },
     {
       "slot": 173,
-      "word": "technological",
+      "word": "together",
       "participantId": "173",
       "githubUsername": "*"
     },
     {
       "slot": 174,
-      "word": "change",
+      "word": "one",
       "participantId": "174",
       "githubUsername": "*"
     },
     {
       "slot": 175,
-      "word": "our",
+      "word": "contribution",
       "participantId": "175",
       "githubUsername": "*"
     },
     {
       "slot": 176,
-      "word": "shared",
+      "word": "one",
       "participantId": "176",
       "githubUsername": "*"
     },
     {
       "slot": 177,
-      "word": "dedication",
+      "word": "connection",
       "participantId": "177",
       "githubUsername": "*"
     },
     {
       "slot": 178,
-      "word": "to",
+      "word": "and",
       "participantId": "178",
       "githubUsername": "*"
     },
     {
       "slot": 179,
-      "word": "transparency",
+      "word": "one",
       "participantId": "179",
       "githubUsername": "*"
     },
     {
       "slot": 180,
-      "word": "cooperation",
+      "word": "community",
       "participantId": "180",
       "githubUsername": "*"
     },
     {
       "slot": 181,
-      "word": "and",
+      "word": "Let",
       "participantId": "181",
       "githubUsername": "*"
     },
     {
       "slot": 182,
-      "word": "uncompromising",
+      "word": "this",
       "participantId": "182",
       "githubUsername": "*"
     },
     {
       "slot": 183,
-      "word": "excellence",
+      "word": "spirit",
       "participantId": "183",
       "githubUsername": "*"
     },
     {
       "slot": 184,
-      "word": "in",
+      "word": "guide",
       "participantId": "184",
       "githubUsername": "*"
     },
     {
       "slot": 185,
-      "word": "every",
+      "word": "everything",
       "participantId": "185",
       "githubUsername": "*"
     },
     {
       "slot": 186,
-      "word": "line",
+      "word": "we",
       "participantId": "186",
       "githubUsername": "*"
     },
     {
       "slot": 187,
-      "word": "of",
+      "word": "build",
       "participantId": "187",
       "githubUsername": "*"
     },
     {
       "slot": 188,
-      "word": "code",
+      "word": "next",
       "participantId": "188",
       "githubUsername": "*"
     },
     {
       "slot": 189,
-      "word": "we",
+      "word": "This",
       "participantId": "189",
       "githubUsername": "*"
     },
     {
       "slot": 190,
-      "word": "write",
+      "word": "is",
       "participantId": "190",
       "githubUsername": "*"
     },
     {
       "slot": 191,
-      "word": "and",
+      "word": "MUKTI",
       "participantId": "191",
       "githubUsername": "*"
     },
     {
       "slot": 192,
-      "word": "share",
+      "word": "and",
       "participantId": "192",
       "githubUsername": "*"
     },
     {
       "slot": 193,
-      "word": "together",
+      "word": "our",
       "participantId": "193",
       "githubUsername": "*"
     },
     {
       "slot": 194,
-      "word": "as",
+      "word": "story",
       "participantId": "194",
       "githubUsername": "*"
     },
     {
       "slot": 195,
-      "word": "one",
+      "word": "continues",
       "participantId": "195",
       "githubUsername": "*"
     },
     {
       "slot": 196,
-      "word": "unified",
+      "word": "with",
       "participantId": "196",
       "githubUsername": "*"
     },
     {
       "slot": 197,
-      "word": "global",
+      "word": "every",
       "participantId": "197",
       "githubUsername": "*"
     },
     {
       "slot": 198,
-      "word": "open",
+      "word": "contribution",
       "participantId": "198",
       "githubUsername": "*"
     },
     {
       "slot": 199,
-      "word": "source",
+      "word": "Thank",
       "participantId": "199",
       "githubUsername": "*"
     },
     {
       "slot": 200,
-      "word": "family",
+      "word": "you",
       "participantId": "200",
       "githubUsername": "*"
     }
   ],
-  "createdAt": "2026-11-05T07:26:50.783Z"
+  "createdAt": "2026-11-05T07:28:48.359Z"
 }

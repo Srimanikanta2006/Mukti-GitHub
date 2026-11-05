@@ -1,7 +1,7 @@
 {
-  "eventId": "mukti-1793863610783",
-  "totalSlots": 200,
+  "eventId": "mukti-closing-sentence",
   "acceptedCount": 0,
+  "totalSlots": 200,
   "pendingCount": 200,
   "rejectedCount": 0,
   "organizerCompletedCount": 0,
@@ -9,7 +9,7 @@
   "slots": {
     "1": {
       "slot": 1,
-      "expectedWord": "Open",
+      "expectedWord": "As",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -21,7 +21,7 @@
     },
     "2": {
       "slot": 2,
-      "expectedWord": "source",
+      "expectedWord": "the",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -33,7 +33,7 @@
     },
     "3": {
       "slot": 3,
-      "expectedWord": "brings",
+      "expectedWord": "MUKTI",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -45,7 +45,7 @@
     },
     "4": {
       "slot": 4,
-      "expectedWord": "people",
+      "expectedWord": "event",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -57,7 +57,7 @@
     },
     "5": {
       "slot": 5,
-      "expectedWord": "together",
+      "expectedWord": "comes",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -81,7 +81,7 @@
     },
     "7": {
       "slot": 7,
-      "expectedWord": "build",
+      "expectedWord": "a",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -93,7 +93,7 @@
     },
     "8": {
       "slot": 8,
-      "expectedWord": "remarkable",
+      "expectedWord": "close",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -105,7 +105,7 @@
     },
     "9": {
       "slot": 9,
-      "expectedWord": "community",
+      "expectedWord": "we",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -117,7 +117,7 @@
     },
     "10": {
       "slot": 10,
-      "expectedWord": "solutions",
+      "expectedWord": "celebrate",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -129,7 +129,7 @@
     },
     "11": {
       "slot": 11,
-      "expectedWord": "empowering",
+      "expectedWord": "the",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -141,7 +141,7 @@
     },
     "12": {
       "slot": 12,
-      "expectedWord": "passionate",
+      "expectedWord": "contributions",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -153,7 +153,7 @@
     },
     "13": {
       "slot": 13,
-      "expectedWord": "creators",
+      "expectedWord": "made",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -165,7 +165,7 @@
     },
     "14": {
       "slot": 14,
-      "expectedWord": "worldwide",
+      "expectedWord": "today",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -177,7 +177,7 @@
     },
     "15": {
       "slot": 15,
-      "expectedWord": "to",
+      "expectedWord": "and",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -189,7 +189,7 @@
     },
     "16": {
       "slot": 16,
-      "expectedWord": "collaborate",
+      "expectedWord": "the",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -201,7 +201,7 @@
     },
     "17": {
       "slot": 17,
-      "expectedWord": "transparently",
+      "expectedWord": "people",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -213,7 +213,7 @@
     },
     "18": {
       "slot": 18,
-      "expectedWord": "and",
+      "expectedWord": "ideas",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -225,7 +225,7 @@
     },
     "19": {
       "slot": 19,
-      "expectedWord": "craft",
+      "expectedWord": "and",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -237,7 +237,7 @@
     },
     "20": {
       "slot": 20,
-      "expectedWord": "extraordinary",
+      "expectedWord": "spirit",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -249,7 +249,7 @@
     },
     "21": {
       "slot": 21,
-      "expectedWord": "technology",
+      "expectedWord": "that",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -261,7 +261,7 @@
     },
     "22": {
       "slot": 22,
-      "expectedWord": "fostering",
+      "expectedWord": "brought",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -273,7 +273,7 @@
     },
     "23": {
       "slot": 23,
-      "expectedWord": "inclusive",
+      "expectedWord": "us",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -285,7 +285,7 @@
     },
     "24": {
       "slot": 24,
-      "expectedWord": "environments",
+      "expectedWord": "together",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -297,7 +297,7 @@
     },
     "25": {
       "slot": 25,
-      "expectedWord": "where",
+      "expectedWord": "Every",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -309,7 +309,7 @@
     },
     "26": {
       "slot": 26,
-      "expectedWord": "diverse",
+      "expectedWord": "participant",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -321,7 +321,7 @@
     },
     "27": {
       "slot": 27,
-      "expectedWord": "knowledge",
+      "expectedWord": "added",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -333,7 +333,7 @@
     },
     "28": {
       "slot": 28,
-      "expectedWord": "is",
+      "expectedWord": "one",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -345,7 +345,7 @@
     },
     "29": {
       "slot": 29,
-      "expectedWord": "freely",
+      "expectedWord": "word",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -357,7 +357,7 @@
     },
     "30": {
       "slot": 30,
-      "expectedWord": "shared",
+      "expectedWord": "yet",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -369,7 +369,7 @@
     },
     "31": {
       "slot": 31,
-      "expectedWord": "across",
+      "expectedWord": "those",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -381,7 +381,7 @@
     },
     "32": {
       "slot": 32,
-      "expectedWord": "borders",
+      "expectedWord": "words",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -393,7 +393,7 @@
     },
     "33": {
       "slot": 33,
-      "expectedWord": "enabling",
+      "expectedWord": "became",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -405,7 +405,7 @@
     },
     "34": {
       "slot": 34,
-      "expectedWord": "every",
+      "expectedWord": "a",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -417,7 +417,7 @@
     },
     "35": {
       "slot": 35,
-      "expectedWord": "developer",
+      "expectedWord": "message",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -429,7 +429,7 @@
     },
     "36": {
       "slot": 36,
-      "expectedWord": "designer",
+      "expectedWord": "no",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -441,7 +441,7 @@
     },
     "37": {
       "slot": 37,
-      "expectedWord": "and",
+      "expectedWord": "individual",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -453,7 +453,7 @@
     },
     "38": {
       "slot": 38,
-      "expectedWord": "thinker",
+      "expectedWord": "could",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -465,7 +465,7 @@
     },
     "39": {
       "slot": 39,
-      "expectedWord": "to",
+      "expectedWord": "create",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -477,7 +477,7 @@
     },
     "40": {
       "slot": 40,
-      "expectedWord": "solve",
+      "expectedWord": "alone",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -489,7 +489,7 @@
     },
     "41": {
       "slot": 41,
-      "expectedWord": "complex",
+      "expectedWord": "This",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -501,7 +501,7 @@
     },
     "42": {
       "slot": 42,
-      "expectedWord": "global",
+      "expectedWord": "is",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -513,7 +513,7 @@
     },
     "43": {
       "slot": 43,
-      "expectedWord": "challenges",
+      "expectedWord": "the",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -525,7 +525,7 @@
     },
     "44": {
       "slot": 44,
-      "expectedWord": "through",
+      "expectedWord": "power",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -537,7 +537,7 @@
     },
     "45": {
       "slot": 45,
-      "expectedWord": "relentless",
+      "expectedWord": "of",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -549,7 +549,7 @@
     },
     "46": {
       "slot": 46,
-      "expectedWord": "innovation",
+      "expectedWord": "open",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -561,7 +561,7 @@
     },
     "47": {
       "slot": 47,
-      "expectedWord": "mutual",
+      "expectedWord": "source",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -573,7 +573,7 @@
     },
     "48": {
       "slot": 48,
-      "expectedWord": "respect",
+      "expectedWord": "people",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -585,7 +585,7 @@
     },
     "49": {
       "slot": 49,
-      "expectedWord": "and",
+      "expectedWord": "with",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -597,7 +597,7 @@
     },
     "50": {
       "slot": 50,
-      "expectedWord": "shared",
+      "expectedWord": "different",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -609,7 +609,7 @@
     },
     "51": {
       "slot": 51,
-      "expectedWord": "human",
+      "expectedWord": "experiences",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -621,7 +621,7 @@
     },
     "52": {
       "slot": 52,
-      "expectedWord": "progress",
+      "expectedWord": "learning",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -633,7 +633,7 @@
     },
     "53": {
       "slot": 53,
-      "expectedWord": "proving",
+      "expectedWord": "building",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -645,7 +645,7 @@
     },
     "54": {
       "slot": 54,
-      "expectedWord": "that",
+      "expectedWord": "improving",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -657,7 +657,7 @@
     },
     "55": {
       "slot": 55,
-      "expectedWord": "dedicated",
+      "expectedWord": "and",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -669,7 +669,7 @@
     },
     "56": {
       "slot": 56,
-      "expectedWord": "individuals",
+      "expectedWord": "creating",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -681,7 +681,7 @@
     },
     "57": {
       "slot": 57,
-      "expectedWord": "united",
+      "expectedWord": "together",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -693,7 +693,7 @@
     },
     "58": {
       "slot": 58,
-      "expectedWord": "by",
+      "expectedWord": "The",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -705,7 +705,7 @@
     },
     "59": {
       "slot": 59,
-      "expectedWord": "common",
+      "expectedWord": "MUKTI",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -717,7 +717,7 @@
     },
     "60": {
       "slot": 60,
-      "expectedWord": "principles",
+      "expectedWord": "club",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -729,7 +729,7 @@
     },
     "61": {
       "slot": 61,
-      "expectedWord": "can",
+      "expectedWord": "encourages",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -741,7 +741,7 @@
     },
     "62": {
       "slot": 62,
-      "expectedWord": "break",
+      "expectedWord": "this",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -753,7 +753,7 @@
     },
     "63": {
       "slot": 63,
-      "expectedWord": "down",
+      "expectedWord": "spirit",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -765,7 +765,7 @@
     },
     "64": {
       "slot": 64,
-      "expectedWord": "barriers",
+      "expectedWord": "by",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -777,7 +777,7 @@
     },
     "65": {
       "slot": 65,
-      "expectedWord": "accelerate",
+      "expectedWord": "creating",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -789,7 +789,7 @@
     },
     "66": {
       "slot": 66,
-      "expectedWord": "scientific",
+      "expectedWord": "opportunities",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -801,7 +801,7 @@
     },
     "67": {
       "slot": 67,
-      "expectedWord": "discovery",
+      "expectedWord": "to",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -813,7 +813,7 @@
     },
     "68": {
       "slot": 68,
-      "expectedWord": "champion",
+      "expectedWord": "explore",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -825,7 +825,7 @@
     },
     "69": {
       "slot": 69,
-      "expectedWord": "accessibility",
+      "expectedWord": "technology",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -837,7 +837,7 @@
     },
     "70": {
       "slot": 70,
-      "expectedWord": "and",
+      "expectedWord": "share",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -849,7 +849,7 @@
     },
     "71": {
       "slot": 71,
-      "expectedWord": "engineer",
+      "expectedWord": "knowledge",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -861,7 +861,7 @@
     },
     "72": {
       "slot": 72,
-      "expectedWord": "resilient",
+      "expectedWord": "support",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -873,7 +873,7 @@
     },
     "73": {
       "slot": 73,
-      "expectedWord": "digital",
+      "expectedWord": "beginners",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -885,7 +885,7 @@
     },
     "74": {
       "slot": 74,
-      "expectedWord": "infrastructure",
+      "expectedWord": "and",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -897,7 +897,7 @@
     },
     "75": {
       "slot": 75,
-      "expectedWord": "that",
+      "expectedWord": "participate",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -909,7 +909,7 @@
     },
     "76": {
       "slot": 76,
-      "expectedWord": "uplifts",
+      "expectedWord": "in",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -921,7 +921,7 @@
     },
     "77": {
       "slot": 77,
-      "expectedWord": "society",
+      "expectedWord": "the",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -933,7 +933,7 @@
     },
     "78": {
       "slot": 78,
-      "expectedWord": "protects",
+      "expectedWord": "open",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -945,7 +945,7 @@
     },
     "79": {
       "slot": 79,
-      "expectedWord": "freedom",
+      "expectedWord": "source",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -957,7 +957,7 @@
     },
     "80": {
       "slot": 80,
-      "expectedWord": "and",
+      "expectedWord": "community",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -969,7 +969,7 @@
     },
     "81": {
       "slot": 81,
-      "expectedWord": "illuminates",
+      "expectedWord": "Today",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -981,7 +981,7 @@
     },
     "82": {
       "slot": 82,
-      "expectedWord": "a",
+      "expectedWord": "we",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -993,7 +993,7 @@
     },
     "83": {
       "slot": 83,
-      "expectedWord": "brighter",
+      "expectedWord": "practised",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -1005,7 +1005,7 @@
     },
     "84": {
       "slot": 84,
-      "expectedWord": "more",
+      "expectedWord": "forking",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -1017,7 +1017,7 @@
     },
     "85": {
       "slot": 85,
-      "expectedWord": "equitable",
+      "expectedWord": "repositories",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -1029,7 +1029,7 @@
     },
     "86": {
       "slot": 86,
-      "expectedWord": "future",
+      "expectedWord": "creating",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -1041,7 +1041,7 @@
     },
     "87": {
       "slot": 87,
-      "expectedWord": "for",
+      "expectedWord": "branches",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -1053,7 +1053,7 @@
     },
     "88": {
       "slot": 88,
-      "expectedWord": "all",
+      "expectedWord": "submitting",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -1065,7 +1065,7 @@
     },
     "89": {
       "slot": 89,
-      "expectedWord": "generations",
+      "expectedWord": "pull",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -1077,7 +1077,7 @@
     },
     "90": {
       "slot": 90,
-      "expectedWord": "to",
+      "expectedWord": "requests",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -1089,7 +1089,7 @@
     },
     "91": {
       "slot": 91,
-      "expectedWord": "come",
+      "expectedWord": "and",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -1101,7 +1101,7 @@
     },
     "92": {
       "slot": 92,
-      "expectedWord": "reminding",
+      "expectedWord": "reviewing",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -1113,7 +1113,7 @@
     },
     "93": {
       "slot": 93,
-      "expectedWord": "us",
+      "expectedWord": "code",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -1125,7 +1125,7 @@
     },
     "94": {
       "slot": 94,
-      "expectedWord": "that",
+      "expectedWord": "More",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -1137,7 +1137,7 @@
     },
     "95": {
       "slot": 95,
-      "expectedWord": "each",
+      "expectedWord": "importantly",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -1149,7 +1149,7 @@
     },
     "96": {
       "slot": 96,
-      "expectedWord": "small",
+      "expectedWord": "we",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -1161,7 +1161,7 @@
     },
     "97": {
       "slot": 97,
-      "expectedWord": "contribution",
+      "expectedWord": "experienced",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -1173,7 +1173,7 @@
     },
     "98": {
       "slot": 98,
-      "expectedWord": "ignites",
+      "expectedWord": "how",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -1185,7 +1185,7 @@
     },
     "99": {
       "slot": 99,
-      "expectedWord": "infinite",
+      "expectedWord": "individual",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -1197,7 +1197,7 @@
     },
     "100": {
       "slot": 100,
-      "expectedWord": "potential",
+      "expectedWord": "efforts",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -1209,7 +1209,7 @@
     },
     "101": {
       "slot": 101,
-      "expectedWord": "cultivating",
+      "expectedWord": "combine",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -1221,7 +1221,7 @@
     },
     "102": {
       "slot": 102,
-      "expectedWord": "open",
+      "expectedWord": "into",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -1233,7 +1233,7 @@
     },
     "103": {
       "slot": 103,
-      "expectedWord": "dialogue",
+      "expectedWord": "something",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -1245,7 +1245,7 @@
     },
     "104": {
       "slot": 104,
-      "expectedWord": "where",
+      "expectedWord": "meaningful",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -1257,7 +1257,7 @@
     },
     "105": {
       "slot": 105,
-      "expectedWord": "curiosity",
+      "expectedWord": "Every",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -1269,7 +1269,7 @@
     },
     "106": {
       "slot": 106,
-      "expectedWord": "sparks",
+      "expectedWord": "issue",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -1281,7 +1281,7 @@
     },
     "107": {
       "slot": 107,
-      "expectedWord": "creativity",
+      "expectedWord": "opened",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -1293,7 +1293,7 @@
     },
     "108": {
       "slot": 108,
-      "expectedWord": "and",
+      "expectedWord": "every",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -1305,7 +1305,7 @@
     },
     "109": {
       "slot": 109,
-      "expectedWord": "collaboration",
+      "expectedWord": "change",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -1317,7 +1317,7 @@
     },
     "110": {
       "slot": 110,
-      "expectedWord": "conquers",
+      "expectedWord": "proposed",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -1329,7 +1329,7 @@
     },
     "111": {
       "slot": 111,
-      "expectedWord": "adversity",
+      "expectedWord": "and",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -1341,7 +1341,7 @@
     },
     "112": {
       "slot": 112,
-      "expectedWord": "nurturing",
+      "expectedWord": "every",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -1353,7 +1353,7 @@
     },
     "113": {
       "slot": 113,
-      "expectedWord": "trust",
+      "expectedWord": "pull",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -1365,7 +1365,7 @@
     },
     "114": {
       "slot": 114,
-      "expectedWord": "through",
+      "expectedWord": "request",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -1377,7 +1377,7 @@
     },
     "115": {
       "slot": 115,
-      "expectedWord": "peer",
+      "expectedWord": "merged",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -1389,7 +1389,7 @@
     },
     "116": {
       "slot": 116,
-      "expectedWord": "review",
+      "expectedWord": "represented",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -1401,7 +1401,7 @@
     },
     "117": {
       "slot": 117,
-      "expectedWord": "ethical",
+      "expectedWord": "curiosity",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -1413,7 +1413,7 @@
     },
     "118": {
       "slot": 118,
-      "expectedWord": "stewardship",
+      "expectedWord": "courage",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -1437,7 +1437,7 @@
     },
     "120": {
       "slot": 120,
-      "expectedWord": "sustainable",
+      "expectedWord": "collaboration",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -1449,7 +1449,7 @@
     },
     "121": {
       "slot": 121,
-      "expectedWord": "maintainer",
+      "expectedWord": "To",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -1461,7 +1461,7 @@
     },
     "122": {
       "slot": 122,
-      "expectedWord": "practices",
+      "expectedWord": "everyone",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -1473,7 +1473,7 @@
     },
     "123": {
       "slot": 123,
-      "expectedWord": "transforming",
+      "expectedWord": "who",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -1485,7 +1485,7 @@
     },
     "124": {
       "slot": 124,
-      "expectedWord": "ambitious",
+      "expectedWord": "participated",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -1497,7 +1497,7 @@
     },
     "125": {
       "slot": 125,
-      "expectedWord": "aspirations",
+      "expectedWord": "thank",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -1509,7 +1509,7 @@
     },
     "126": {
       "slot": 126,
-      "expectedWord": "into",
+      "expectedWord": "you",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -1521,7 +1521,7 @@
     },
     "127": {
       "slot": 127,
-      "expectedWord": "practical",
+      "expectedWord": "for",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -1533,7 +1533,7 @@
     },
     "128": {
       "slot": 128,
-      "expectedWord": "systems",
+      "expectedWord": "bringing",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -1545,7 +1545,7 @@
     },
     "129": {
       "slot": 129,
-      "expectedWord": "that",
+      "expectedWord": "your",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -1557,7 +1557,7 @@
     },
     "130": {
       "slot": 130,
-      "expectedWord": "benefit",
+      "expectedWord": "time",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -1569,7 +1569,7 @@
     },
     "131": {
       "slot": 131,
-      "expectedWord": "everyone",
+      "expectedWord": "enthusiasm",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -1581,7 +1581,7 @@
     },
     "132": {
       "slot": 132,
-      "expectedWord": "everywhere",
+      "expectedWord": "and",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -1593,7 +1593,7 @@
     },
     "133": {
       "slot": 133,
-      "expectedWord": "amplifying",
+      "expectedWord": "ideas",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -1605,7 +1605,7 @@
     },
     "134": {
       "slot": 134,
-      "expectedWord": "underrepresented",
+      "expectedWord": "to",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -1617,7 +1617,7 @@
     },
     "135": {
       "slot": 135,
-      "expectedWord": "voices",
+      "expectedWord": "this",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -1629,7 +1629,7 @@
     },
     "136": {
       "slot": 136,
-      "expectedWord": "and",
+      "expectedWord": "shared",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -1641,7 +1641,7 @@
     },
     "137": {
       "slot": 137,
-      "expectedWord": "celebrating",
+      "expectedWord": "creation",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -1653,7 +1653,7 @@
     },
     "138": {
       "slot": 138,
-      "expectedWord": "interdisciplinary",
+      "expectedWord": "May",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -1665,7 +1665,7 @@
     },
     "139": {
       "slot": 139,
-      "expectedWord": "teamwork",
+      "expectedWord": "this",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -1677,7 +1677,7 @@
     },
     "140": {
       "slot": 140,
-      "expectedWord": "while",
+      "expectedWord": "be",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -1689,7 +1689,7 @@
     },
     "141": {
       "slot": 141,
-      "expectedWord": "advancing",
+      "expectedWord": "more",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -1701,7 +1701,7 @@
     },
     "142": {
       "slot": 142,
-      "expectedWord": "modern",
+      "expectedWord": "than",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -1713,7 +1713,7 @@
     },
     "143": {
       "slot": 143,
-      "expectedWord": "data",
+      "expectedWord": "a",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -1725,7 +1725,7 @@
     },
     "144": {
       "slot": 144,
-      "expectedWord": "science",
+      "expectedWord": "one-day",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -1737,7 +1737,7 @@
     },
     "145": {
       "slot": 145,
-      "expectedWord": "cloud",
+      "expectedWord": "activity",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -1749,7 +1749,7 @@
     },
     "146": {
       "slot": 146,
-      "expectedWord": "computing",
+      "expectedWord": "may",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -1761,7 +1761,7 @@
     },
     "147": {
       "slot": 147,
-      "expectedWord": "artificial",
+      "expectedWord": "it",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -1773,7 +1773,7 @@
     },
     "148": {
       "slot": 148,
-      "expectedWord": "intelligence",
+      "expectedWord": "begin",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -1785,7 +1785,7 @@
     },
     "149": {
       "slot": 149,
-      "expectedWord": "and",
+      "expectedWord": "your",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -1797,7 +1797,7 @@
     },
     "150": {
       "slot": 150,
-      "expectedWord": "open",
+      "expectedWord": "journey",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -1809,7 +1809,7 @@
     },
     "151": {
       "slot": 151,
-      "expectedWord": "standards",
+      "expectedWord": "as",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -1821,7 +1821,7 @@
     },
     "152": {
       "slot": 152,
-      "expectedWord": "for",
+      "expectedWord": "contributors",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -1833,7 +1833,7 @@
     },
     "153": {
       "slot": 153,
-      "expectedWord": "the",
+      "expectedWord": "who",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -1845,7 +1845,7 @@
     },
     "154": {
       "slot": 154,
-      "expectedWord": "greater",
+      "expectedWord": "ask",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -1857,7 +1857,7 @@
     },
     "155": {
       "slot": 155,
-      "expectedWord": "good",
+      "expectedWord": "questions",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -1869,7 +1869,7 @@
     },
     "156": {
       "slot": 156,
-      "expectedWord": "of",
+      "expectedWord": "help",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -1881,7 +1881,7 @@
     },
     "157": {
       "slot": 157,
-      "expectedWord": "global",
+      "expectedWord": "others",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -1893,7 +1893,7 @@
     },
     "158": {
       "slot": 158,
-      "expectedWord": "humanity",
+      "expectedWord": "and",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -1905,7 +1905,7 @@
     },
     "159": {
       "slot": 159,
-      "expectedWord": "enriching",
+      "expectedWord": "build",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -1917,7 +1917,7 @@
     },
     "160": {
       "slot": 160,
-      "expectedWord": "educational",
+      "expectedWord": "in",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -1929,7 +1929,7 @@
     },
     "161": {
       "slot": 161,
-      "expectedWord": "opportunities",
+      "expectedWord": "the",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -1941,7 +1941,7 @@
     },
     "162": {
       "slot": 162,
-      "expectedWord": "lowering",
+      "expectedWord": "open",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -1953,7 +1953,7 @@
     },
     "163": {
       "slot": 163,
-      "expectedWord": "hurdles",
+      "expectedWord": "As",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -1965,7 +1965,7 @@
     },
     "164": {
       "slot": 164,
-      "expectedWord": "and",
+      "expectedWord": "we",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -1977,7 +1977,7 @@
     },
     "165": {
       "slot": 165,
-      "expectedWord": "inspiring",
+      "expectedWord": "leave",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -1989,7 +1989,7 @@
     },
     "166": {
       "slot": 166,
-      "expectedWord": "learning",
+      "expectedWord": "let",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -2001,7 +2001,7 @@
     },
     "167": {
       "slot": 167,
-      "expectedWord": "strengthening",
+      "expectedWord": "us",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -2013,7 +2013,7 @@
     },
     "168": {
       "slot": 168,
-      "expectedWord": "resilience",
+      "expectedWord": "carry",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -2025,7 +2025,7 @@
     },
     "169": {
       "slot": 169,
-      "expectedWord": "in",
+      "expectedWord": "forward",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -2037,7 +2037,7 @@
     },
     "170": {
       "slot": 170,
-      "expectedWord": "times",
+      "expectedWord": "what",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -2049,7 +2049,7 @@
     },
     "171": {
       "slot": 171,
-      "expectedWord": "of",
+      "expectedWord": "we",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -2061,7 +2061,7 @@
     },
     "172": {
       "slot": 172,
-      "expectedWord": "rapid",
+      "expectedWord": "created",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -2073,7 +2073,7 @@
     },
     "173": {
       "slot": 173,
-      "expectedWord": "technological",
+      "expectedWord": "together",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -2085,7 +2085,7 @@
     },
     "174": {
       "slot": 174,
-      "expectedWord": "change",
+      "expectedWord": "one",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -2097,7 +2097,7 @@
     },
     "175": {
       "slot": 175,
-      "expectedWord": "our",
+      "expectedWord": "contribution",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -2109,7 +2109,7 @@
     },
     "176": {
       "slot": 176,
-      "expectedWord": "shared",
+      "expectedWord": "one",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -2121,7 +2121,7 @@
     },
     "177": {
       "slot": 177,
-      "expectedWord": "dedication",
+      "expectedWord": "connection",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -2133,7 +2133,7 @@
     },
     "178": {
       "slot": 178,
-      "expectedWord": "to",
+      "expectedWord": "and",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -2145,7 +2145,7 @@
     },
     "179": {
       "slot": 179,
-      "expectedWord": "transparency",
+      "expectedWord": "one",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -2157,7 +2157,7 @@
     },
     "180": {
       "slot": 180,
-      "expectedWord": "cooperation",
+      "expectedWord": "community",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -2169,7 +2169,7 @@
     },
     "181": {
       "slot": 181,
-      "expectedWord": "and",
+      "expectedWord": "Let",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -2181,7 +2181,7 @@
     },
     "182": {
       "slot": 182,
-      "expectedWord": "uncompromising",
+      "expectedWord": "this",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -2193,7 +2193,7 @@
     },
     "183": {
       "slot": 183,
-      "expectedWord": "excellence",
+      "expectedWord": "spirit",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -2205,7 +2205,7 @@
     },
     "184": {
       "slot": 184,
-      "expectedWord": "in",
+      "expectedWord": "guide",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -2217,7 +2217,7 @@
     },
     "185": {
       "slot": 185,
-      "expectedWord": "every",
+      "expectedWord": "everything",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -2229,7 +2229,7 @@
     },
     "186": {
       "slot": 186,
-      "expectedWord": "line",
+      "expectedWord": "we",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -2241,7 +2241,7 @@
     },
     "187": {
       "slot": 187,
-      "expectedWord": "of",
+      "expectedWord": "build",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -2253,7 +2253,7 @@
     },
     "188": {
       "slot": 188,
-      "expectedWord": "code",
+      "expectedWord": "next",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -2265,7 +2265,7 @@
     },
     "189": {
       "slot": 189,
-      "expectedWord": "we",
+      "expectedWord": "This",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -2277,7 +2277,7 @@
     },
     "190": {
       "slot": 190,
-      "expectedWord": "write",
+      "expectedWord": "is",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -2289,7 +2289,7 @@
     },
     "191": {
       "slot": 191,
-      "expectedWord": "and",
+      "expectedWord": "MUKTI",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -2301,7 +2301,7 @@
     },
     "192": {
       "slot": 192,
-      "expectedWord": "share",
+      "expectedWord": "and",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -2313,7 +2313,7 @@
     },
     "193": {
       "slot": 193,
-      "expectedWord": "together",
+      "expectedWord": "our",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -2325,7 +2325,7 @@
     },
     "194": {
       "slot": 194,
-      "expectedWord": "as",
+      "expectedWord": "story",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -2337,7 +2337,7 @@
     },
     "195": {
       "slot": 195,
-      "expectedWord": "one",
+      "expectedWord": "continues",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -2349,7 +2349,7 @@
     },
     "196": {
       "slot": 196,
-      "expectedWord": "unified",
+      "expectedWord": "with",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -2361,7 +2361,7 @@
     },
     "197": {
       "slot": 197,
-      "expectedWord": "global",
+      "expectedWord": "every",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -2373,7 +2373,7 @@
     },
     "198": {
       "slot": 198,
-      "expectedWord": "open",
+      "expectedWord": "contribution",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -2385,7 +2385,7 @@
     },
     "199": {
       "slot": 199,
-      "expectedWord": "source",
+      "expectedWord": "Thank",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -2397,7 +2397,7 @@
     },
     "200": {
       "slot": 200,
-      "expectedWord": "family",
+      "expectedWord": "you",
       "status": "pending",
       "prNumber": null,
       "contributor": null,
@@ -2411,10 +2411,10 @@
   "contributions": {},
   "activityLog": [
     {
-      "timestamp": "2026-11-05T07:26:50.791Z",
+      "timestamp": "2026-11-05T07:28:48.360Z",
       "type": "EVENT_INITIALIZED",
-      "message": "Event initialized with 200 slots."
+      "message": "MUKTI workshop event initialized with 200 participants and custom closing sentence."
     }
   ],
-  "lastUpdated": "2026-11-05T07:26:50.792Z"
+  "lastUpdated": "2026-11-05T07:28:48.373Z"
 }
