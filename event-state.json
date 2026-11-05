@@ -1,8 +1,8 @@
 {
   "eventId": "mukti-1793818642219",
   "totalSlots": 10,
-  "acceptedCount": 1,
-  "pendingCount": 9,
+  "acceptedCount": 2,
+  "pendingCount": 8,
   "rejectedCount": 0,
   "organizerCompletedCount": 0,
   "revealStatus": "LOCKED",
@@ -23,13 +23,14 @@
     "2": {
       "slot": 2,
       "expectedWord": "source",
-      "status": "pending",
-      "prNumber": null,
-      "contributor": null,
-      "acceptedAt": null,
+      "word": "source",
+      "status": "accepted",
+      "prNumber": 204,
+      "contributor": "Sanjana-087",
+      "acceptedAt": "2026-11-05T05:54:12.970Z",
       "completedBy": null,
-      "attemptCount": 0,
-      "commitSha": null,
+      "attemptCount": 1,
+      "commitSha": "61bdf33ee103fedc4ecbcd555a958a17fb819a0d",
       "errorDetails": null
     },
     "3": {
@@ -138,6 +139,15 @@
       "commitSha": "b4fa1fe1ffc4055e458ce2dbb87546a61396f5d0",
       "status": "accepted",
       "timestamp": "2026-11-05T05:46:11.427Z"
+    },
+    "2": {
+      "slot": 2,
+      "word": "source",
+      "contributor": "Sanjana-087",
+      "prNumber": 204,
+      "commitSha": "61bdf33ee103fedc4ecbcd555a958a17fb819a0d",
+      "status": "accepted",
+      "timestamp": "2026-11-05T05:54:12.970Z"
     }
   },
   "activityLog": [
@@ -153,7 +163,15 @@
       "word": "Open",
       "contributor": "Sanjana-087",
       "prNumber": 203
+    },
+    {
+      "timestamp": "2026-11-05T05:54:12.970Z",
+      "type": "CONTRIBUTION_ACCEPTED",
+      "slot": 2,
+      "word": "source",
+      "contributor": "Sanjana-087",
+      "prNumber": 204
     }
   ],
-  "lastUpdated": "2026-11-05T05:46:11.428Z"
+  "lastUpdated": "2026-11-05T05:54:12.971Z"
 }
