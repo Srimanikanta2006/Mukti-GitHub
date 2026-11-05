@@ -17,7 +17,7 @@ Each participant is assigned a specific number (and a secret word by the organiz
 ## 📜 The Secret Sentence
 
 <!-- MUKTI-SENTENCE-START -->
-Open source 3 4 5 6 7 8 9 10
+Open source Vijay 4 5 6 7 8 9 10
 <!-- MUKTI-SENTENCE-END -->
 
 ---
