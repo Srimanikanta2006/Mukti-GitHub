@@ -1,8 +1,8 @@
 {
   "eventId": "mukti-closing-sentence",
-  "acceptedCount": 1,
+  "acceptedCount": 2,
   "totalSlots": 200,
-  "pendingCount": 199,
+  "pendingCount": 198,
   "rejectedCount": 0,
   "organizerCompletedCount": 0,
   "revealStatus": "LOCKED",
@@ -2399,13 +2399,14 @@
     "200": {
       "slot": 200,
       "expectedWord": "you",
-      "status": "pending",
-      "prNumber": null,
-      "contributor": null,
-      "acceptedAt": null,
+      "word": "you",
+      "status": "accepted",
+      "prNumber": 209,
+      "contributor": "Tekh-ops",
+      "acceptedAt": "2026-11-06T07:29:43.421Z",
       "completedBy": null,
-      "attemptCount": 0,
-      "commitSha": null,
+      "attemptCount": 1,
+      "commitSha": "238d5304bee8b4bdf4e8d1c7463f3aa9c560d9ee",
       "errorDetails": null
     }
   },
@@ -2418,6 +2419,15 @@
       "commitSha": "9c046274d5888e7ed1b5cb9f9ee00caf5ddb999a",
       "status": "accepted",
       "timestamp": "2026-11-05T12:21:55.467Z"
+    },
+    "200": {
+      "slot": 200,
+      "word": "you",
+      "contributor": "Tekh-ops",
+      "prNumber": 209,
+      "commitSha": "238d5304bee8b4bdf4e8d1c7463f3aa9c560d9ee",
+      "status": "accepted",
+      "timestamp": "2026-11-06T07:29:43.421Z"
     }
   },
   "activityLog": [
@@ -2433,7 +2443,15 @@
       "word": "a",
       "contributor": "Tekh-ops",
       "prNumber": 208
+    },
+    {
+      "timestamp": "2026-11-06T07:29:43.421Z",
+      "type": "CONTRIBUTION_ACCEPTED",
+      "slot": 200,
+      "word": "you",
+      "contributor": "Tekh-ops",
+      "prNumber": 209
     }
   ],
-  "lastUpdated": "2026-11-05T12:21:55.468Z"
+  "lastUpdated": "2026-11-06T07:29:43.422Z"
 }
